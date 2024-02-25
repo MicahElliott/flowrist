@@ -395,6 +395,10 @@ but it wasn't worth it with all the _left-middle_ SFBs on `n`.
 so it needs magic, at which point it's great. But I'm overall pleased with the
 `g` location, particularly for the `gr` in-roll.
 
+**`l` on pinky.** I haven't seen any other layouts that do this, but it feels
+great and the stats are great — better than `c` or other possibilities I've
+seen/tried for that spot.
+
 **`y` is awkward**. It needs _magic_ for _any (a◊)_, _why_ (w◊), and _yeah_
 (y◊), but is otherwise pretty good there, especially for `yo...`. And it's
 familiar from Qwerty.
@@ -438,6 +442,28 @@ Applying _magic_ to Colemak may be a much simpler approach to solving its
 shortcomings. I didn't discover magic until too late in the game (and so
 haven't tried to invent the right patterns for it there), but that's a good
 place to start.
+
+## So why not just use Canary?
+
+As a Colemak variant, I wanted to make [Canary][6] work for me. It made some
+good steps to reduce redirects, especially some bad ones, and SFBs are
+fantastic. `crst` works well, and `g` is nice there, and `f` is good on
+RHS. But here's what I couldn't live with:
+
+- `m` could never work alongside `n` on right-hand. Way too much LSB and
+  redirects from it.
+
+- More divergent from Colemak than was necessary, especially in the core with
+  `f` and `c` moving.
+
+- `r` and `l` together on ring was breaking my wrist with the upward DSFBs.
+
+- Reaching for `w` didn't suit my hand.
+
+Side note: I originally hated the `one` pattern, but ended up with it in
+Flowrist anyway, and decided that it was acceptable since I had a magic
+workaround for it. But then I got used to it, and now don't feel that it's so
+godawful.
 
 ## FAQs
 
