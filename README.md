@@ -1,10 +1,12 @@
-# Flowrist (fLowRiST, Technogrok, Grokkable, GeeKCoDe, gkcd)
+# Flowrist Keyboard Layout
+
+<!-- (fLowRiST, Technogrok, Grokkable, GeeKCoDe, gkcd) -->
 
 Flowrist is a keyboard layout that focuses on:
 
 - minimizing **redirects** and **stretching** (low LSBs, AKA lateral movement)
 - the easiest possible (though high at 2%) and mostly downward **SFB**s
-- **offloading pinkies**
+- **offloading pinkies** for busy indexes and middles
 
 It is designed to be easy to transition to from Colemak(-DH) with only ~10
 (mostly lower-freq) keys moving, and maintaining most of its core. One could
