@@ -1,24 +1,31 @@
 # Flowrist (fLowRiST, Technogrok, Grokkable, GeeKCoDe, gkcd)
 
-Flowrist is a keyboard layout that focuses on offloading pinkies, minimizing
-redirects and stretching (low LSBs, AKA lateral movement), and the easiest
-possible (though high) SFBs. It is designed to be easy to transition to from
-Colemak(-DH) with only ~10 (mostly lower-freq) keys moving. One could also
-transition from QWERTY with ~13 moves (see section below for intermediate
-layout). The intentionally high SFBs are almost all middle-index finger
-overlaps, and applying the overlap technique actually brings the elbows
-outward into a more natural wrist position.
+Flowrist is a keyboard layout that focuses on:
+
+- minimizing **redirects** and **stretching** (low LSBs, AKA lateral movement)
+- the easiest possible (though high at 2%) and mostly downward **SFB**s
+- **offloading pinkies**
+
+It is designed to be easy to transition to from Colemak(-DH) with only ~10
+(mostly lower-freq) keys moving. One could also transition from QWERTY with
+~13 moves (see section below for intermediate layout). The intentionally high
+SFBs are almost all middle-index finger overlaps, and applying the overlap
+technique actually brings the elbows outward into a more natural wrist
+position.
 
 There is a sample implementation for QMK.
 
 ```
 √ j b f p x   y w o u '
-  l r s t m    nh e i a
+  l r s t m     ŋ e i a
 q g k c d v   n h / . ,
        ◊ ⇑  z  ⇐ _
 ```
 
-It's really designed to be used with a reverse-symmetric-stagger keyboard as:
+(`√` is _compose_, `◊` is _magic_, `ŋ` is `nh` _adaptive_)
+
+It's really designed to be used with a reverse-symmetric-stagger (to make the
+SFB overlaps easier) keyboard as:
 
 ```
 \   j b f p x  \    /  y w o u ' /
@@ -30,7 +37,7 @@ It's really designed to be used with a reverse-symmetric-stagger keyboard as:
 _(It has been tried on a matrix-style keyboard and still felt good, but needs
 much more trial.)_
 
-There some novelties here:
+The novelties/surprises here:
 
 - `q` is an extra pinky key instead of `shift` (`v` or `m` also work there but busy pinkies)
 - `ŋ` (`nh`) is an _adaptive_ key, defaulting to `n`, but `h` after other letters
@@ -41,7 +48,7 @@ There some novelties here:
   magic (multi-letter macros) for others (a few)
 - this isn't great for SFBs according to the analyzers, but it's tuned for a
   reverse-symmetric-stagger keyboard where SFBs can be good
-- the `z` I end up using is actually a `gk` combo
+- the `z` I end up using is actually a `gk` combo (and work surprisingly well)
 
 Caveat about the designer: I am not a speedy typist; have only gotten to 100
 wpm on qwerty, same on Colemak, and typically only take my own designs to 60
@@ -61,10 +68,10 @@ weeks on Flowrist I have had some bursts to 120, and that feels promising.
 > - Home keys usage: 64%
 > - Total Rolls: 44.7%
 
-Some of those look not great at all, and in some ways actually worse than
-Colemak so WTF. However, I don't think they tell the real story:
+The SFBs in particular look not great at all, and in some ways actually worse.
+However, I don't think they tell the real story:
 
-- If you discount the index and middle SFBs, you have this:
+- If you discount the index and middle SFBs, you're left with:
   > - Sfb:  0.48%
   > - Dsfb: 1.29%
 
@@ -72,23 +79,23 @@ Colemak so WTF. However, I don't think they tell the real story:
   _feels_ ok with index: ∴ `n` on vowel-hand is ok only if index (and many
   layouts have done this). Compare this to Colemak's 10.5% and Qwerty's 13.2%.
 
-- You could get _redirects_ down to almost nothing if you move the `nh` to
+  _(You could get redirects down to almost nothing if you move the `ŋ` to
   thumb. I didn't find that worth it since redirects with index are not too
   detrimental IME. Otherwise, redirects are VERY good at 1%! But do note that
   redirects in general are something to really avoid as much as possible and
   an important decision. Try typing `stretch` on Colemak an realize the
-  slowness of your left hand changing direction 3 times.
+  slowness of your left hand changing direction 3 times.)_
 
 - **SFBs** are almost completely on the four "strength columns" and so mostly fine
-  with index and middle (particularly with anatak). Qwerty and Colemak are
+  with index and middle (particularly with [anatak][4]). Qwerty and Colemak are
   both actually good at this too (but see next point). (I tried going up to 3
   SFBs there and that just got messy.)
 
 - The remaining 0.48% SFBs are `br` (not `rb`) and `rk` (not much `kr`), which
-  are _downward-overlap_ alts, and are reasonable with ring-middle (though I
-  magic them). That's important, and in in contrast to Colemak's _upward_ `rw`
-  DSFB (where you have to shift or slide or use ring-pinky). The same is true
-  on the right-hand with `ui` (Colemak is pretty good in with these too).
+  are _downward-overlap_ alts, and are reasonable with ring-middle. That's
+  important, and in in contrast to Colemak's _upward_ `rw` DSFB (where you
+  have to shift or slide or use ring-pinky). The same is true on the
+  right-hand with `ui` (Colemak is pretty good in with these too).
 
 - Having a _few_ terrible patterns is ok so long as you have **magic**
   (left-thumb) workarounds (up to maybe 8): `any` (`a◊`), `back`, `why`, `one`
@@ -116,16 +123,16 @@ Colemak so WTF. However, I don't think they tell the real story:
 So if you take my interpretation of all that, you can _kinda_ say these are the
 real numbers:
 
-> - Sfb:  0.48%
-> - Dsfb: 1.29%
-> - Lsb:  0.19%
+> - Sfb:  0.48% (on strength cols)
+> - Dsfb: 1.29% (on strength cols)
+> - Lsb:  0.19% (discounting same-row `y`)
 > - Redirects:    4.24%
 > - BadRedirects: 0.12%
-> - Home keys usage: 64%
+> - Home keys usage: 64% (thanks to `ŋ`)
 > - Total Rolls: 51%
 
 The [Cyanophage Playground][1] gives the following _effort_ scores, with a few
-advantageous tweaks for Anatak, and doesn't count the adaptive `ŋ`:
+advantageous tweaks for [Anatak][4], and doesn't count the adaptive `ŋ`:
 
 > - Total Word Effort: 1032
 > - Effort: 400
@@ -134,19 +141,17 @@ advantageous tweaks for Anatak, and doesn't count the adaptive `ŋ`:
 
 The most common code-editor command-letters are in strong and spatially
 meaningful positions. Vim is completely ignored since it was built
-specifically for qwerty and seems ridiculous to retrofit IMO for better
-layouts (though modal editing with god-mode, meow, etc can be great). I found
-layouts that put `n` (next) and `b` (back) on pinky were taxing it.
+specifically for qwerty and seems ridiculous to retrofit for better layouts
+IMO (though modal editing with god-mode, meow, etc can be great). I found
+layouts that put `n` (next) and `b` (back) and other repeatables on pinky were
+taxing it (graphite, gallium, engram, carbyne, beakl).
 
 Notice that the `bf` pairing is spatially reflective of _back/forward_. Same
 with other pairings: `pn` for _prev/next_. `ywh` for _yank/save/select_.
 `ae` for _start/end_ (though backwards). `sr` for _search/reverse_. `xv` for
 _cut/paste_ (but macros preferred). `SPC` and `BSPC` for next/prev page etc.
 
-Other happy accident pairs:
-
-- `y/n` — yes/no
-- `l/r` — left/right
+Other happy accident pairs: `y/n` — yes/no; `l/r` — left/right
 
 ## Adaptive n/h
 
@@ -157,21 +162,14 @@ it's back to `sn`. This is important for editor sequences like `(C-x) C-s` to
 save your buffer and then `C-ŋ` to go to _next_ line quickly becomes `C-n` (as
 intended) and not `C-h`.
 
-#### My biases
-
-- I don't mind stertching into center-col to `m` position. It's way better
-  than `v` or `g` spots, and `g` is better than `v`.
-
--
-
 ## Slots for combos (very rare pairs)
 
 There are several two-key combos that when pressed simultaneously work well as
-macros. Eg, I use `xk` as the `z` key. Here is my full set, but these should
+macros. Eg, I use `gk` as the `z` key. Here is my full set, but these should
 be changed to suit your prefs.
 
-- `xk` — `x`
-- `xq` — copy-paste buffer menu
+- `gk` — `x`
+- `gq` — copy-paste buffer menu
 - `bf` — `C-TAB`
 - `rl` — `TAB` (experimental since `eaRLy`
 - `fp` — screenshot
@@ -179,7 +177,7 @@ be changed to suit your prefs.
 - `jr` — `C-w` (close window, cut)
 - `pv` — `C-v` (paste)
 - `gm` — (but `seGMent`)
-- `rx` —
+- `tm` —
 - `td` —
 - `lj` —
 - `pj` —
@@ -189,10 +187,11 @@ be changed to suit your prefs.
 
 ## Less natural patterns for practice
 
-Every layout will have some challenging patterns. I like them to be well known
+Every layout will have some challenging patterns. I want them to be well known
 so that they can be practiced. Eg, although many folks may be comfortable with
 the `ho` stretch-reach, I am generally not (except maybe the `hou` case), so
-it is usually _index-ring_. And _index-pinky_ for `hu`.
+it is usually _index-ring_ (which leaves _middle_ open for `n`. And
+_index-pinky_ for `hu`.
 
 There are a couple cases where the `ŋ` will surprise you. `own` has to be
 bare-`n` since the `wŋ` sequence needs to resolve as `wh`. So you'll want to
@@ -207,6 +206,7 @@ means _uninteresting_.
 - `han` (`mpi`)
 - `rope` (`.m.i`)
 - `open` (`r.mi`)
+- `one` (`rim`) (or magic)
 - `only` (`rm.i`)
 - `who/whe` (`mir`)
 - `went` (`mri.`)
@@ -253,9 +253,13 @@ means _uninteresting_.
 - `committee` (repeat practice)
 - `quiet` (`.rmi.`) (or `qu◊et`)
 - `techno` (`...ii.`)
+- `note` (`ir.m`) (hard!)
+
+And these are particularly challenging, and could be magic or just slowly
+typed (or really interesting alts):
+
 - `beyond`
 - `moment`
-- `note`
 - `board`
 - `consider`
 
@@ -268,14 +272,14 @@ echo `grep '[mg]' top1000.lst | shuf`
 
 Then paste those into monkeytype's _custom_ setting.
 
-### Fun new roll patterns somewhat unique to Flowrist
+## Fun new roll patterns somewhat unique to Flowrist
 
 `au`, `bl`, `mp`, `wh`, `w/y/hou`, `ue`, `gr`, `ion`, `bj`, `fl`, `xp`, `xt`,
 `ck`, `sm`, `sl`
 
 Plus the usual Colemak goodies: `pt`, `sc`, `fr`
 
-### Similarity to Colemak
+## Similarity to Colemak
 
 ```
       F P     y     u
@@ -287,10 +291,10 @@ I called `y` a similarity because you know it immediately from qwerty days.
 `u` is a "minor" move.
 
 If you want to keep it more similar to Colemak, or do a transitional, you can
-do this:
+do this, where the only major moves are `wolavm`:
 
 ```
-  Q k F P B   Y w o u
+  Q k F P B   Y w o U
   l R S T G   j N E I a
   v X C D m   z H
 ```
@@ -307,7 +311,7 @@ that I feel are worth macro-ing via [repeat key][16]:
 - `i` -> `ious`
 - `j` -> `\bback` (that's a backspace to remove the `j`!)
 - `q` -> `\bprob`
-- `o` -> `one`
+- `o` -> `one` (maybe, but `oo` is probably more important)
 - `w` -> `why`
 - `y` -> `yeah`
 
@@ -318,18 +322,18 @@ The rest are repeats, and `v,k,z` are open for whatever you decide.
 Qwerty-G position (consonant hand) is way undervalued. That reach feels almost
 as good as home-row, and is a waste to put `g` there. So now `m` is there.
 
-Some SFBs are not at all. The `wh` overlap is as good as any middle-index
+_Some SFBs are not_ at all. The `wh` overlap is as good as any middle-index
 usage, at least on a keyboard with the right slant. I can imagine a layout
-with atrocious SFB score yet is very comfy. Even `mp` is really
+with pretty bad SFB score yet is very comfy. Even `mp` is really
 (qwerty-)`gr`eat.
 
-Adaptive keys (`nh`) are a game changer for home-row (thank you [horn][7]!).
+_Adaptive keys_ (`nh`) are a game changer for home-row (thank you [horn][7]!).
 They are slightly challenging since they waste a slot and require more choice.
 But there's probably room for one more if there are two other letters that
 complement/combine as well (besides `n`-vowel). Other candidates are `hf` and
 `ir` and `m`-vowel, though the latter two will always be bad for redirects.
 
-There is a balance between optimal typing and editor commands location.
+There is a balance between optimal typing and _editor commands location_.
 Designers have considered `xcv` together but it can go a lot further. If
 `hjkl` is such a thing for qwerty Vimmers, why don't we emphasize its approach
 in a layout. I'm tempted to even swap `p` and `w` to get the `pn` spatial
@@ -340,26 +344,31 @@ many months to really be up to speed. Trying Canary wasn't bad but Graphite
 was unattainable. So pushing Qwertizens to something more Qwerty-like or
 transitional will enable more folks to take a plunge.
 
-It's not unreasonable to use a combo as a key. Using `xk` for `z` is working
-well for me. So it might be ok to do it for `jxk` too.
+It's not unreasonable to _use a combo as a key_. Using `gk` for `z` is working
+well for me. So it might be ok to do it for any of `jxk` too.
 
-I'm uncertain about hand balance and if it matters much. The perfect letter at
+I'm uncertain about _hand balance_ and if it matters a lot. The perfect letter at
 Qwerty-H has big potential. Maybe that's a repeat-key. I have it as `Ctrl-c`
-presently.
+presently (for Emacs etc).
 
 There are "chunks" out there with great potential for magic. I'm using `how`,
 `any`, `one`, `prob`, and those are pretty good for Flowrist but there may be
 opportunities here for other layouts.
 
+_Rolls_ are great (though some prefer alternates, and they're great too of
+course). However, to achieve really high rolls, you'd need to intermix vowels
+and consonants on the hands. But this is so bad for redirects, so you have to
+choose your tradeoff.
+
 The optimizers we have available to us are incredibly powerful tools. And
-there is room for many other metrics and different ways to calculate what is
+there is room for other metrics and different ways to calculate what is
 presently measured. My main conclusion is that there is enough uncertainty and
 personal preference involved that probably the safest way to choose a layout
 is simply using the one that hurts the least. For me, that means:
 
 - finding the right SFBs on the stongest fingers, and using pinky and ring
   with the fewest contortions.
-- choose the best stretches and vowel-hand shouldn't stretch much; even qwerty
+- choose the best stretches, and vowel-hand shouldn't stretch much; even qwerty
   did ok at that (on the right)
 
 ## More Flowrist design explanation
@@ -372,15 +381,15 @@ that `wh` is a very nice inward roll (which analyzers won't detect) for a gain
 of 3+%. Note also that `wh<vowel>` is always a redirect. However, it feels
 fast and natural with a little practice.
 
-**Vowels on the right**. Most sensible layouts do this to get fewer redirects.
-This is why we have `w` and `h` on the right (as an inward roll). `w` is a
-semi-vowel, and `h` is arguably [not totally a
+**Vowels on the right**. Most sensible layouts have a vowel-hand to get fewer
+redirects. This is why we have `w` and `h` on the right (as an inward roll);
+`w` is a semi-vowel, and `h` is arguably [not totally a
 consonant](https://linguistics.stackexchange.com/questions/4834/why-is-h-called-voiceless-vowel-phonetically-and-h-consonant-phonologically)
 and thus works well on the vowel hand. So the exception is `n`. It's over
 there for a couple reasons: tradition (so many will already be comfortable
 with it); and it's the best _adaptive_ combo IMO. It's bad for redirects there
 but a worthwhile compromise. I tried swapping it with `f` (and adaptive `fh`)
-but it wasn't worth it with all the _left-middle_ SFBs.
+but it wasn't worth it with all the _left-middle_ SFBs on `n`.
 
 **`g` on pinky**. There are D/SFBs with `g` and `l`, and the `gl` is terrible,
 so it needs magic, at which point it's great. But I'm overall pleased with the
@@ -391,14 +400,14 @@ so it needs magic, at which point it's great. But I'm overall pleased with the
 familiar from Qwerty.
 
 **Indexes are overloaded**. Yes `tpmvd` together result in 1.5% and 0.5% in
-D/SFBs, but in practice almost all of their patterns work very well with
-_index-middle_ dances.
+D/SFBs, but in practice almost all of their patterns work very well with some
+practice on their _index-middle_ dances.
 
 **Shortcuts left the left (non-mouse) hand**. Yeah, but there was no way `a`
-could stay on left. `w` is the other unfortunate victim. I use triple-click
-more often now instead of `Ctrl-a`. And I QMK-mapped `jr` combo to be
-`Ctrl-w`. And `bf` to be `Ctrl-Tab`. On the bright side, you now have `l` on
-the left.
+could stay on left. `w` is the other unfortunate victim. Outside of Emacs, I
+use triple-click more often now instead of `Ctrl-a`. And I QMK-mapped `jr`
+combo to be `Ctrl-w`. And `bf` to be `Ctrl-Tab`. On the bright side, you now
+have `Ctrl-l` on the left.
 
 ## What's really wrong with Colemak?
 
@@ -410,18 +419,25 @@ are the shortcomings I see with Colemak:
   you can get fast at it, but my experience was that it will always be
   error-prone. It's especially bad to have redirects involving _ring_ and
   _pinky_. At 10.1% total and 1.47% "bad", it's really hard to not feel
-  crippled by them. Flowrist gets them down to 4.2% and 0.12% respectively.
+  crippled by them (`you` is half of those bad ones btw). Flowrist gets them
+  down to 4.2% and 0.12% respectively.
 
 - **`m` on center-right-column causes LSBs.** `m` alone is a 1.5% LSB (and
   also 2% of redirects). It definitely doesn't belong anywhere near there. And
   as soon as you move it to left-hand, lots of other moves cascade. Flowrist
   takes LSBs down to 0.2% if you discount `y` with magic.
 
-- **Not a real vowel hand.** `a` on right causes 2% more redirects and plainly
-  makes the design chaotic (even if it was good for rolls).
+- **Not a real vowel hand.** `a` on right causes 2.2% more redirects and plainly
+  makes the design chaotic (even if it was good for rolls). It also accounts
+  for the other half of the bad ones.
 
 All that said, Colemak is pretty/really good on: **Effort, SFBs, rolls, and
 underloading rings and pinkies**. But even Qwerty is good on the underloading!
+
+Applying _magic_ to Colemak may be a much simpler approach to solving its
+shortcomings. I didn't discover magic until too late in the game (and so
+haven't tried to invent the right patterns for it there), but that's a good
+place to start.
 
 ## FAQs
 
@@ -431,7 +447,8 @@ underloading rings and pinkies**. But even Qwerty is good on the underloading!
   tweak to put `w` somewhere else; maybe on center-col-right-index or even
   right-pinky._
 
-- **Do I need the adaptive `nh`?** _No, it'll work fine without._
+- **Do I need the adaptive `nh`?** _No, it'll work fine without, but you lose
+  the crazy-high home-row stats._
 
 ## Transitional Intermediate from QWERTY
 
