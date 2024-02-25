@@ -42,16 +42,18 @@ much more trial.)_
 
 The novelties/surprises here:
 
-- `q` is an extra pinky key instead of `shift` (`v` or `m` also work there but busy pinkies)
 - `ŋ` (`nh`) is an _adaptive_ key, defaulting to `n`, but `h` after other letters
 - bare-`h` is still convenient since you need it for words that start with `h`
 - bare-`n` exists because there is a rare need for it for words like `sign`
+  and `own`
 - all the vowels and semi-vowels (`yw`) are on the right hand (only 8 letters!)
-- `◊` is the "regic" (repeat/magic) key that does repeats for some (most) and
-  magic (multi-letter macros) for others (a few)
+- `◊` is the "regic" (repeat/magic) key that does _repeats_ for some (most) and
+  _magic_ (multi-letter macros) for others (a few)
 - this isn't great for SFBs according to the analyzers, but it's tuned for a
-  reverse-symmetric-stagger keyboard where SFBs can be good
-- the `z` I end up using is actually a `gk` combo (and work surprisingly well)
+  reverse-symmetric-stagger keyboard where SFBs can be good (rolls)
+- the `z` I end up using is actually a `gk` combo (and works surprisingly well)
+- `q` is an extra pinky key instead of `shift` (`v` or `m` also work there but
+  busy pinkies)
 
 There is a (barely scrutable) [example QMK implementation of Flowrist for
 Anatak][17], with _magic_ and _adaptive_, where the mapping is upside-down
@@ -267,8 +269,8 @@ means _uninteresting_.
 - `techno` (`...ii.`)
 - `note` (`ir.m`) (hard!)
 
-And these are particularly challenging, and could be magic or just slowly
-typed (or really interesting alts):
+And these are a few of the particularly challenging, and could be magic or
+just slowly typed (or really interesting alts):
 
 - `beyond`
 - `moment`
@@ -303,7 +305,7 @@ I called `y` a similarity because you know it immediately from qwerty days.
 `u` is a "minor" move.
 
 If you want to keep it more similar to Colemak, or do a transitional, you can
-do this, where the only major moves are `wolavm`:
+do this, where the only 6 major moves are `wolavm`:
 
 ```
   Q k F P B   Y w o U
@@ -327,15 +329,16 @@ that I feel are worth macro-ing via [repeat key][16]:
 - `w` -> `why`
 - `y` -> `yeah`
 
-The rest are repeats, and `v,k,z` are open for whatever you decide.
+The rest are repeats (`◊e` is `ee`), and `v,k,z` are open for whatever you decide.
 
 ## Major Insights in Layout Design
 
-Qwerty-G position (consonant hand) is way undervalued. That reach feels almost
-as good as home-row, and is a waste to put `g` there. So now `m` is there.
+Qwerty-G position (consonant hand only) is way undervalued. That reach feels
+almost as good as home-row, and is a waste to put `g` there. So now `m` is
+there.
 
 _Some SFBs are not_ at all. The `wh` overlap is as good as any middle-index
-usage, at least on a keyboard with the right slant. I can imagine a layout
+usage, at least on a keyboard with symmetric slant. I can imagine a layout
 with pretty bad SFB score yet is very comfy. Even `mp` is really
 (qwerty-)`gr`eat.
 
