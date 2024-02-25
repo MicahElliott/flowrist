@@ -7,25 +7,26 @@ Flowrist is a keyboard layout that focuses on:
 - **offloading pinkies**
 
 It is designed to be easy to transition to from Colemak(-DH) with only ~10
-(mostly lower-freq) keys moving. One could also transition from QWERTY with
-~13 moves (see section below for intermediate layout). The intentionally high
-SFBs are almost all middle-index finger overlaps, and applying the overlap
-technique actually brings the elbows outward into a more natural wrist
-position.
+(mostly lower-freq) keys moving, and maintaining most of its core. One could
+also transition from QWERTY with ~13 moves (see section below for intermediate
+layout). The intentionally high SFBs are almost all middle-index finger
+overlaps, and applying the overlap technique actually brings the elbows
+outward into a more natural wrist position.
 
 There is a sample implementation for QMK.
 
 ```
 √ j b f p x   y w o u '
-  l r s t m     ŋ e i a
+  l r s t m   ¢ ŋ e i a
 q g k c d v   n h / . ,
        ◊ ⇑  z  ⇐ _
 ```
 
-(`√` is _compose_, `◊` is _magic_, `ŋ` is `nh` _adaptive_)
+(`√` is _compose_, `◊` is _magic_, `ŋ` is `nh` _adaptive_, `¢` is `Ctrl-c`,
+and all of these are optional)
 
-It's really designed to be used with a reverse-symmetric-stagger (to make the
-SFB overlaps easier) keyboard as:
+It's really designed to be used with a reverse-symmetric-stagger keyboard (to
+make the SFB overlaps easier) as:
 
 ```
 \   j b f p x  \    /  y w o u ' /
@@ -50,11 +51,20 @@ The novelties/surprises here:
   reverse-symmetric-stagger keyboard where SFBs can be good
 - the `z` I end up using is actually a `gk` combo (and work surprisingly well)
 
+There is a (barely scrutable) [example QMK implementation of Flowrist for
+Anatak][17], with _magic_ and _adaptive_, where the mapping is upside-down
+(note you're on the `thumbin` branch).
+
 Caveat about the designer: I am not a speedy typist; have only gotten to 100
-wpm on qwerty, same on Colemak, and typically only take my own designs to 60
-before getting distracted and making more changes. It's taken me ~5
-significant iterations over 6 months to arrive at _Flowrist_. After a few
-weeks on Flowrist I have had some bursts to 120, and that feels promising.
+wpm on qwerty, same on Colemak, and typically only take my own designs and
+others to 60 before getting distracted and regressing to more changes. It's
+taken me ~5 significant iterations over 6 months to arrive at _Flowrist_.
+After a few weeks on Flowrist I have had some bursts to 120, and didn't feel
+any obvious bottlenecks that would limit faster fingers from going further. It
+has been tested by me on up to English-5k, plus all the potentially awkward
+trigrams from [this post][12]. I'm obviously biased, but this is the most
+comfortable my wrists have felt on any of the many layouts I've tried in
+anger.
 
 ## Defying the analyzers
 
@@ -68,8 +78,8 @@ weeks on Flowrist I have had some bursts to 120, and that feels promising.
 > - Home keys usage: 64%
 > - Total Rolls: 44.7%
 
-The SFBs in particular look not great at all, and in some ways actually worse.
-However, I don't think they tell the real story:
+The SFBs in particular look not great at all, and in some ways actually worse
+than Colemak. However, I don't think they tell the real story:
 
 - If you discount the index and middle SFBs, you're left with:
   > - Sfb:  0.48%
@@ -92,7 +102,7 @@ However, I don't think they tell the real story:
   SFBs there and that just got messy.)
 
 - The remaining 0.48% SFBs are `br` (not `rb`) and `rk` (not much `kr`), which
-  are _downward-overlap_ alts, and are reasonable with ring-middle. That's
+  are **_downward-overlap_ alts**, and are reasonable with ring-middle. That's
   important, and in in contrast to Colemak's _upward_ `rw` DSFB (where you
   have to shift or slide or use ring-pinky). The same is true on the
   right-hand with `ui` (Colemak is pretty good in with these too).
@@ -103,8 +113,8 @@ However, I don't think they tell the real story:
   `anyone` -> `a◊u◊`, `many` -> `ma◊`
 
 - **LSB** (lateral) hand-shifting by one key is feasible: `MoVe` and `SySTEM` and
-  `only` move left-hand to the right one position, but it's easy enough with
-  some practice; other examples: `ONlY`, `MuST`, `tHEY`
+  `ONlY` move left-hand to the right one position, but it's easy enough with
+  some practice; other examples: `MuST`, `tHEY` (and see many more below)
 
 - The **LSB** (lateral) score of _0.95_ is misleading. I consider it closer to
   _0.2_ since almost all of it is due to the `yo` roll-stretch (and a little
@@ -123,8 +133,8 @@ However, I don't think they tell the real story:
 So if you take my interpretation of all that, you can _kinda_ say these are the
 real numbers:
 
-> - Sfb:  0.48% (on strength cols)
-> - Dsfb: 1.29% (on strength cols)
+> - Sfb:  0.48% (on non-strength cols)
+> - Dsfb: 1.29% (on non-strength cols)
 > - Lsb:  0.19% (discounting same-row `y`)
 > - Redirects:    4.24%
 > - BadRedirects: 0.12%
@@ -506,3 +516,4 @@ cold-turkey directly to full Flowrist).
 [14]: https://forum.colemak.com/topic/1858-learn-colemak-in-steps-with-the-tarmak-layouts/
 [15]: https://apps.apple.com/my/app/keybuild/id1547174534
 [16]: https://github.com/qmk/qmk_firmware/blob/master/docs/feature_repeat_key.md
+[17]: https://github.com/MicahElliott/anatak60/blob/thumbin/keymap.c
