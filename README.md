@@ -5,10 +5,11 @@
 Flowrist is a keyboard layout that focuses on:
 
 - minimizing **redirects** and **stretching** (low LSBs, AKA lateral movement)
-- the easiest possible (though high at 2%) and mostly downward **SFB**s
+- the easiest possible (though high at 2%) and mostly **downward SFBs**
+- a reality of **near-0 D/SFBs** with easy alt-fingerings
 - **offloading pinkies** for busy indexes and middles
 
-It is designed to be easy to transition to from Colemak(-DH) with only ~10
+It is designed to be easy to transition to from Colemak(-DH) with ~12
 (mostly lower-freq) keys moving, and maintaining most of its core. One could
 also transition from QWERTY with ~13 moves (see section below for intermediate
 layout). The intentionally high SFBs are almost all middle-index finger
@@ -64,11 +65,11 @@ wpm on qwerty, same on Colemak, and typically only take my own designs and
 others to 60 before getting distracted and regressing to more changes. It's
 taken me ~5 significant iterations over 6 months to arrive at _Flowrist_.
 After a few weeks on Flowrist I have had some bursts to 120, and didn't feel
-any obvious bottlenecks that would limit faster fingers from going further. It
-has been tested by me on up to English-5k, plus all the potentially awkward
-trigrams from [this post][12]. I'm obviously biased, but this is the most
-comfortable my wrists have felt on any of the many layouts I've tried in
-anger.
+any obvious bottlenecks that would limit faster fingers from going further.
+Especially given the no-SFBs patterns listed below. It has been tested by me
+on up to English-5k, plus all the potentially awkward trigrams from [this
+post][12]. I'm obviously biased, but this is the most comfortable my wrists
+have felt on any of the many layouts I've tried in anger.
 
 ## Defying the analyzers
 
@@ -199,29 +200,35 @@ be changed to suit your prefs.
 - `,-` — `backtick`
 - `nh` —
 
-## Less natural patterns for practice
+## Less natural patterns for practice (for no D/SFBs!)
 
 Every layout will have some challenging patterns. I want them to be well known
-so that they can be practiced. Eg, although many folks may be comfortable with
-the `ho` stretch-reach, I am generally not (except maybe the `hou` case), so
-it is usually _index-ring_ (which leaves _middle_ open for `n`. And
-_index-pinky_ for `hu`.
+so that they can be practiced. The fastest typists in the world mostly still
+use Qwerty, and they do that by constantly shifting and contorting their hands
+to avoid SFBs. Flowrist was designed to turn the tort into comfortable
+overlaps and minor shifts.
 
-There are a couple cases where the `ŋ` will surprise you. `own` has to be
-bare-`n` since the `wŋ` sequence needs to resolve as `wh`. So you'll want to
-reach for `o` with _ring_ (to actually get a nice roll out of it).
-
-This section contains most of the patterns I've adopted, and is more for
+This section contains most of those patterns I've adopted, and is more for
 future reference. If you find yourself ever slow (sliding) on a D/SFB, refer
 to this. The `imrp` are for fingers: `i`ndex, `m`iddle, `r`ing, `p`inky. A `.`
 means _uninteresting_.
 
+Eg, although many folks may be comfortable with the `ho` index-middle (`im`)
+stretch-reach, I am generally not (except maybe the `hou` case), so it is
+usually _index-ring_ (which leaves _middle_ open for `n`). And _index-pinky_
+for `hu`.
+
+There are a few rare cases where the `ŋ` will surprise you. Eg, `own` has to be
+bare-`n` since the `wŋ` sequence needs to resolve as `wh`. So you'll want to
+reach for `o` with _ring_ (to actually get a nice roll out of it).
+
 - `thin`/`than` (same index for `n` and `h`)
-- `han` (`mpi`)
+- `own/sign/snow` (bare-n)
+- `han` (`mpi`) (long pinky stretch)
 - `rope` (`.m.i`)
 - `open` (`r.mi`)
 - `one` (`rim`) (or magic)
-- `only` (`rm.i`)
+- `only` (`rm.i`) (hand-shift)
 - `who/whe` (`mir`)
 - `went` (`mri.`)
 - `win/won` (`mri`)
@@ -230,16 +237,19 @@ means _uninteresting_.
 - `home/hope/hose` (`ir.m`)
 - `hun` (`ipm`)
 - `people` (`.mr...`)
+- `goes/does` (`.ri.`)
 - `met` (`i.m`)
+- `middle` (`i.m◊p.`)
 - `time` (`m.i.`)
+- `face` (`r.i.`)
 - `fact/fect/sect` (`r.mi`)
 - `exp/ext` (`.im`)
-- `own`  (bare-n)
-- `sign` (bare-n)
-- `they` (`.mri`)
+- `they` (`.mri`) (shift)
 - `move` (`mimi`)
-- `part` (`m.pi`)
+- `pit/pat/put/pet/pot/peat` (`m.i`) (`p` is often middle)
+- `part` (`m.pi`) (very often!)
 - `step` (`rmi`)
+- `soft` (`m.ri`)
 - `complete` (`m.imp...`)
 - `vid` (`i.m`)
 - `way` (`mpi`)
@@ -286,10 +296,14 @@ echo `grep '[mg]' top1000.lst | shuf`
 
 Then paste those into monkeytype's _custom_ setting.
 
+**Note on the left-thumb:** It takes quite a while to get used to using
+a _regic_ key, even moreso when it's a new thumb. It took me a few weeks to
+get comfortable.
+
 ## Fun new roll patterns somewhat unique to Flowrist
 
 `au`, `bl`, `mp`, `wh`, `w/y/hou`, `ue`, `gr`, `ion`, `bj`, `fl`, `xp`, `xt`,
-`ck`, `sm`, `sl`
+`ck`, `sm`, `sl`, `sk`, `lk`
 
 Plus the usual Colemak goodies: `pt`, `sc`, `fr`
 
@@ -426,27 +440,29 @@ practice on their _index-middle_ dances.
 could stay on left. `w` is the other unfortunate victim. Outside of Emacs, I
 use triple-click more often now instead of `Ctrl-a`. And I QMK-mapped `jr`
 combo to be `Ctrl-w`. And `bf` to be `Ctrl-Tab`. On the bright side, you now
-have `Ctrl-l` on the left.
+have `Ctrl-l` on the left. And it does help to have a `Ctrl` on the right hand
+too. You can probably re-bind some alternate on left-hand to handle the
+missing shortcuts.
 
 ## What's really wrong with Colemak?
 
-...and is it really worth switching? I have to answer this to justify it for
-myself. If you have the time to switch again, I do think it's worth it. Here
-are the shortcomings I see with Colemak:
+...and is it really worth switching? If you have the time and energy to switch
+again, I do think it's worth it. Here are the major shortcomings I see with
+Colemak:
 
-- **Redirects are a killer.** The poster child is `you`. After a few years,
-  you can get fast at it, but my experience was that it will always be
-  error-prone. It's especially bad to have redirects involving _ring_ and
+- **Redirects are a killer.** The poster child is `you`. After a lot of
+  practice, you can get fast at it, but my experience was that it will always
+  be error-prone. It's especially bad to have redirects involving _ring_ and
   _pinky_. At 10.1% total and 1.47% "bad", it's really hard to not feel
   crippled by them (`you` is half of those bad ones btw). Flowrist gets them
-  down to 4.2% and 0.12% respectively.
+  down to 4.2% total and 0.12% bad.
 
 - **`m` on center-right-column causes LSBs.** `m` alone is a 1.5% LSB (and
   also 2% of redirects). It definitely doesn't belong anywhere near there. And
   as soon as you move it to left-hand, lots of other moves cascade. Flowrist
   takes LSBs down to 0.2% if you discount `y` with magic.
 
-- **Not a real vowel hand.** `a` on right causes 2.2% more redirects and plainly
+- **Not a real vowel hand.** `a` on left causes 2.2% more redirects and plainly
   makes the design chaotic (even if it was good for rolls). It also accounts
   for the other half of the bad ones.
 
@@ -456,7 +472,7 @@ underloading rings and pinkies**. But even Qwerty is good on the underloading!
 Applying _magic_ to Colemak may be a much simpler approach to solving its
 shortcomings. I didn't discover magic until too late in the game (and so
 haven't tried to invent the right patterns for it there), but that's a good
-place to start.
+place to start, if you're not fully convinced that you need something new.
 
 ## So why not just use Canary?
 
