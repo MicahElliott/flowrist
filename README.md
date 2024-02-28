@@ -9,33 +9,32 @@ Flowrist is a keyboard layout that focuses on:
 - a reality of **near-0 D/SFBs** with easy alt-fingerings
 - **offloading pinkies** for busy indexes and middles
 
-It is designed to be easy to transition to from Colemak(-DH) with ~12
-(mostly lower-freq) keys moving, and maintaining most of its core. One could
-also transition from QWERTY with ~13 moves (see section below for intermediate
-layout). The intentionally high SFBs are almost all middle-index finger
-overlaps, and applying the overlap technique actually brings the elbows
-outward into a more natural wrist position.
-
-There is a sample implementation for QMK.
+It is designed to be **easy to transition to from Colemak(-DH)** with ~12
+(mostly lower-freq) keys moving, and maintaining most of its core (only 2 of
+the top-10 freqs changed: `a` and `o`). One could also transition from QWERTY
+with ~13 moves (see section below for intermediate layout). The intentionally
+high SFBs (still under 2%) are almost all middle-to-index finger overlaps, and
+applying that overlap technique actually brings the elbows outward into a more
+natural wrist position.
 
 ```
-√ j b f p x   y w o u '
+√ " b f p x   y w o u '
   l r s t m   ¢ ŋ e i a
 q g k c d v   n h / . ,
-       ◊ ⇑  z  ⇐ _
+       ◊ ⇑     ⇐ _
 ```
 
 (`√` is _compose_, `◊` is _magic_, `ŋ` is `nh` _adaptive_, `¢` is `Ctrl-c`,
-and all of these are optional)
+`j` (`px`) and `z` (`gk`) are combos, and all of these are optional)
 
 It's really designed to be used with a reverse-symmetric-stagger keyboard (to
 make the SFB overlaps easier) as:
 
 ```
-\   j b f p x  \    /  y w o u ' /
+\   " b f p x  \    /  y w o u ' /
  \   l r s t m  \  /    ŋ e i a /
   \ q g k c d v  \/  n h / . , /
-           ◊ ⇑    z   ⇐ _
+           ◊ ⇑        ⇐ _
 ```
 
 _(It has been tried on a matrix-style keyboard and still felt good, but needs
@@ -55,10 +54,15 @@ The novelties/surprises here:
 - the `z` I end up using is actually a `gk` combo (and works surprisingly well)
 - `q` is an extra pinky key instead of `shift` (`v` or `m` also work there but
   busy pinkies)
+- left-hand rides low, right is high, and that seems fine
+- the symmetric-stagger's elbows-out twist makes patterns like `ue`, `on`,
+  `mp`, `ft`, especially comfortable, and even multi-row hops like `f.c`
+  (_middle-index_) are easy
 
 There is a (barely scrutable) [example QMK implementation of Flowrist for
-Anatak][17], with _magic_ and _adaptive_, where the mapping is upside-down
-(note you're on the `thumbin` branch).
+Anatak][17], with _magic_ and _adaptive_ keys, where the mapping is
+upside-down (because the keyboard is an upside-down [Katana60][18]). Note
+you're on the `thumbin` branch.
 
 Caveat about the designer: I am not a speedy typist; have only gotten to 100
 wpm on qwerty, same on Colemak, and typically only take my own designs and
@@ -67,7 +71,7 @@ taken me ~5 significant iterations over 6 months to arrive at _Flowrist_.
 After a few weeks on Flowrist I have had some bursts to 120, and didn't feel
 any obvious bottlenecks that would limit faster fingers from going further.
 Especially given the no-SFBs patterns listed below. It has been tested by me
-on up to English-5k, plus all the potentially awkward trigrams from [this
+on up to English-10k, plus all the potentially awkward trigrams from [this
 post][12]. I'm obviously biased, but this is the most comfortable my wrists
 have felt on any of the many layouts I've tried in anger.
 
@@ -95,8 +99,8 @@ than Colemak. However, I don't think they tell the real story:
   layouts have done this). Compare this to Colemak's 10.5% and Qwerty's 13.2%.
 
   _(You could get redirects down to almost nothing if you move the `ŋ` to
-  thumb. I didn't find that worth it since redirects with index are not too
-  detrimental IME. Otherwise, redirects are VERY good at 1%! But do note that
+  thumb. I didn't find that worth it since redirects with index are not a
+  showstopper IME. Otherwise, redirects are VERY good at 1%! But do note that
   redirects in general are something to really avoid as much as possible and
   an important decision. Try typing `stretch` on Colemak an realize the
   slowness of your left hand changing direction 3 times.)_
@@ -115,11 +119,12 @@ than Colemak. However, I don't think they tell the real story:
 - Having a _few_ terrible patterns is ok so long as you have **magic**
   (left-thumb) workarounds (up to maybe 8): `any` (`a◊`), `back`, `why`, `one`
   (`u◊`), `ious`, `yeah`; and these apply nicely as composable chunks:
-  `anyone` -> `a◊u◊`, `many` -> `ma◊`
+  `anyone` -> `a◊u◊`, `many` -> `ma◊`, `glorious` -> `g◊ori◊`
 
 - **LSB** (lateral) hand-shifting by one key is feasible: `MoVe` and `SySTEM` and
   `ONlY` move left-hand to the right one position, but it's easy enough with
-  some practice; other examples: `MuST`, `tHEY` (and see many more below)
+  some practice; other examples: `MuST`, `tHEY` (and see many more below;
+  those are all hard examples!)
 
 - The **LSB** (lateral) score of _0.95_ is misleading. I consider it closer to
   _0.2_ since almost all of it is due to the `yo` roll-stretch (and a little
@@ -127,10 +132,11 @@ than Colemak. However, I don't think they tell the real story:
 
 - It's more **inward-rolly** than it looks. This is true of other layouts too,
   but Flowrist has a little more by design with `wh`. It also inherited a few
-  from Colemak like `pt` (and `sc` is ok). Other decent ones are `mv`, `mp`,
-  `tm`, `td`. I'd like to see layouts go further with the concept and design
-  for columns 3 and 6 to have a lot more of these; slots `nh`, `td`, and even
-  `pt` are missed opportunities!
+  from Colemak like `pt` (and `sc` is ok). Other decent ones are `m.v`, `mp`,
+  `t.m`, `t.d`. I'd like to see layouts go further with the concept and design
+  for strength columns to have a lot more of these; slots `nh`, `td`, and even
+  `pt` are missed opportunities! Well, so are `fp` and `cd`, but at least we
+  have a lot of these for combos.
 
 - **Rolls** overall are way undercalculated. If you count `pt`, `sc`, `wh`,
   `mp`, you see another 8+%, bringing the actual total to well above 50%.
@@ -140,7 +146,7 @@ real numbers:
 
 > - Sfb:  0.48% (on non-strength cols)
 > - Dsfb: 1.29% (on non-strength cols)
-> - Lsb:  0.19% (discounting same-row `y`)
+> - Lsb:  0.19% (discounting same-row `y`, and magic)
 > - Redirects:    4.24%
 > - BadRedirects: 0.12%
 > - Home keys usage: 64% (thanks to `ŋ`)
@@ -170,12 +176,12 @@ Other happy accident pairs: `y/n` — yes/no; `l/r` — left/right
 
 ## Adaptive n/h
 
-This was a really fun discovery and borrowed directly from
-[horn][7]'s QMK code. It runs on a 500 ms timer so that
-normally typing `sŋ` is `sh` but if you wait half a second between strokes,
-it's back to `sn`. This is important for editor sequences like `(C-x) C-s` to
-save your buffer and then `C-ŋ` to go to _next_ line quickly becomes `C-n` (as
-intended) and not `C-h`.
+This was a really fun discovery and borrowed directly from [horn][7]'s QMK
+code. It runs on a 500 ms timer so that normally typing `sŋ` is `sh` but if
+you wait half a second between strokes, it's back to `sn`. But this is just
+important for editor sequences like `(C-x) C-s` to save your buffer and then
+`C-ŋ` to go to _next_ line fairly quickly becomes `C-n` (as intended) and not
+`C-h`.
 
 ## Slots for combos (very rare pairs)
 
@@ -228,10 +234,11 @@ reach for `o` with _ring_ (to actually get a nice roll out of it).
 - `rope` (`.m.i`)
 - `open` (`r.mi`)
 - `one` (`rim`) (or magic)
-- `only` (`rm.i`) (hand-shift)
+- `only` (`rm.i`) (hand-shift and hard down-up))
+- `deny` (`.rmi`) (shift)
 - `who/whe` (`mir`)
 - `went` (`mri.`)
-- `win/won` (`mri`)
+- `win/won/wen` (`mri`)
 - `with` (`mr.i`)
 - `new/now` (`irm`)
 - `home/hope/hose` (`ir.m`)
@@ -274,10 +281,11 @@ reach for `o` with _ring_ (to actually get a nice roll out of it).
 - `str` (terrible redirect from colemak!)
 - `eco` (`m.r`)
 - `leg` (`p.r`)
-- `committee` (repeat practice)
 - `quiet` (`.rmi.`) (or `qu◊et`)
 - `techno` (`...ii.`)
 - `note` (`ir.m`) (hard!)
+- `committee/keenness/whippoorwill/barrenness/unsuccessfully`
+  (_repeat_ practice, full coverage!)
 
 And these are a few of the particularly challenging, and could be magic or
 just slowly typed (or really interesting alts):
@@ -302,10 +310,10 @@ get comfortable.
 
 ## Fun new roll patterns somewhat unique to Flowrist
 
-`au`, `bl`, `mp`, `wh`, `w/y/hou`, `ue`, `gr`, `ion`, `bj`, `fl`, `xp`, `xt`,
+`au`, `bl`, `mp`, `wh`, `w/y/hou`, `ue`, `gr`, `ion`, `fl`, `xp`, `xt`,
 `ck`, `sm`, `sl`, `sk`, `lk`
 
-Plus the usual Colemak goodies: `pt`, `sc`, `fr`
+Plus the usual Colemak goodies: `pt`, `sc`, `fs`
 
 ## Similarity to Colemak
 
@@ -345,7 +353,7 @@ that I feel are worth macro-ing via [repeat key][16]:
 
 The rest are repeats (`◊e` is `ee`), and `v,k,z` are open for whatever you decide.
 
-## Major Insights in Layout Design
+## Personal Insights in Layout Design
 
 Qwerty-G position (consonant hand only) is way undervalued. That reach feels
 almost as good as home-row, and is a waste to put `g` there. So now `m` is
@@ -363,20 +371,22 @@ complement/combine as well (besides `n`-vowel). Other candidates are `hf` and
 `ir` and `m`-vowel, though the latter two will always be bad for redirects.
 
 There is a balance between optimal typing and _editor commands location_.
-Designers have considered `xcv` together but it can go a lot further. If
+Designers have considered `zxcv` together but it can go a lot further. If
 `hjkl` is such a thing for qwerty Vimmers, why don't we emphasize its approach
 in a layout. I'm tempted to even swap `p` and `w` to get the `pn` spatial
 `prev/next` (but I like the `wh` too much to try).
 
 It is soooo hard for me to learn a new layout from scratch. It would take me
-many months to really be up to speed. Trying Canary wasn't bad but Graphite
-was unattainable. So pushing Qwertizens to something more Qwerty-like or
-transitional will enable more folks to take a plunge.
+many months to really be up to speed. Trying Canary wasn't terrible but
+Graphite was unattainable in the time I had. So pushing Qwertizens to
+something more Qwerty-like or transitional will enable more folks to take a
+plunge.
 
-It's not unreasonable to _use a combo as a key_. Using `gk` for `z` is working
-well for me. So it might be ok to do it for any of `jxk` too.
+It's not unreasonable to _use a combo as a key_. Using `gk` for `z` and `cd`
+for `j` is working well for me. So it might be ok to do it for any of `x` and
+`k` too.
 
-I'm uncertain about _hand balance_ and if it matters a lot. The perfect letter at
+I'm uncertain about _hand balance_ and if it's overrated. The perfect letter at
 Qwerty-H has big potential. Maybe that's a repeat-key. I have it as `Ctrl-c`
 presently (for Emacs etc).
 
@@ -403,7 +413,7 @@ is simply using the one that hurts the least. For me, that means:
 ## More Flowrist design explanation
 
 Placing `w` above `h` means that although `w` _looks_ like an index key (and
-thus an common SFB), it's almost as commonly a middle-finger. You'll know by
+thus a common SFB), it's almost as commonly a middle-finger. You'll know by
 looking/thinking ahead a couple letters for a `n` or `h`. This means index
 stays busy only pressing `y`, `w`, and `n/h` (and sometimes `h` and `e`). And
 that `wh` is a very nice inward roll (which analyzers won't detect) for a gain
@@ -421,15 +431,15 @@ but a worthwhile compromise. I tried swapping it with `f` (and adaptive `fh`)
 but it wasn't worth it with all the _left-middle_ SFBs on `n`.
 
 **`g` on pinky**. There are D/SFBs with `g` and `l`, and the `gl` is terrible,
-so it needs magic, at which point it's great. But I'm overall pleased with the
-`g` location, particularly for the `gr` in-roll.
+so it absolutely needs magic there, at which point it's great. But I'm overall
+pleased with the `g` location, particularly for the `gr` in-roll.
 
 **`l` on pinky.** I haven't seen any other layouts that do this, but it feels
-great and the stats are great — better than `c` or other possibilities I've
-seen/tried for that spot.
+great to me and the stats are great — better than `c` or other possibilities
+I've seen/tried for that spot.
 
 **`y` is awkward**. It needs _magic_ for _any (a◊)_, _why_ (w◊), and _yeah_
-(y◊), but is otherwise pretty good there, especially for `yo...`. And it's
+(y◊), but is otherwise surprisingly good there, especially for `yo...`. And it's
 familiar from Qwerty.
 
 **Indexes are overloaded**. Yes `tpmvd` together result in 1.5% and 0.5% in
@@ -538,3 +548,19 @@ cold-turkey directly to full Flowrist).
 [15]: https://apps.apple.com/my/app/keybuild/id1547174534
 [16]: https://github.com/qmk/qmk_firmware/blob/master/docs/feature_repeat_key.md
 [17]: https://github.com/MicahElliott/anatak60/blob/thumbin/keymap.c
+[18]: https://candykeys.com/product/katana60-pcb-V2
+
+
+<!-- Hi! Wanted to share the "Flowrist" layout I finally landed on. It might not be -->
+<!-- practical for most (aka anyone), given the "inverted symmetric-stagger" -->
+<!-- keyboard I use, but hopefully some of the ideas in the "experience -->
+<!-- report"-style write-up I made here are interesting/useful to some: -->
+<!-- https://github.com/MicahElliott/flowrist -->
+
+<!-- I'm not planning presently to change much about it since it's working well for -->
+<!-- me, but certainly interested in hearing from the knowlegdeable folks I've -->
+<!-- learnd so much from reading here (and anyone): if there are any obvious flaws -->
+<!-- or expected eventual pain points or clear improvements, etc. Also a big -->
+<!-- shout-out to Oxey, Cyanophage, phbonacci, and several others for their -->
+<!-- analyzers, analysis, and layouts that have been so inspiring to make it -->
+<!-- possible for plebs like me to be able to make a layout! -->
