@@ -15,7 +15,8 @@ the top-10 freqs changed: `a` and `o`). One could also transition from QWERTY
 with ~13 moves (see section below for intermediate layout). The intentionally
 high SFBs (still under 2%) are almost all middle-to-index finger overlaps, and
 applying that overlap technique actually brings the elbows outward into a more
-natural wrist position.
+natural wrist position. See the [transitional](#transitional) section below
+to try Flowrist with just 6 moves from Colemak.
 
 ```
 √ " b f p x   y w o u '
@@ -56,7 +57,7 @@ The novelties/surprises here:
   busy pinkies)
 - left-hand rides low, right is high, and that seems fine
 - the symmetric-stagger's elbows-out twist makes patterns like `ue`, `on`,
-  `mp`, `ft`, especially comfortable, and even multi-row hops like `f.c`
+  `mp`, `ft`, especially comfortable, and even 2-row hops like `f.c`
   (_middle-index_) are easy
 
 There is a (barely scrutable) [example QMK implementation of Flowrist for
@@ -73,7 +74,7 @@ any obvious bottlenecks that would limit faster fingers from going further.
 Especially given the no-SFBs patterns listed below. It has been tested by me
 on up to English-10k, plus all the potentially awkward trigrams from [this
 post][12]. I'm obviously biased, but this is the most comfortable my wrists
-have felt on any of the many layouts I've tried in anger.
+have felt on any of the many layouts I've tried.
 
 ## Defying the analyzers
 
@@ -105,16 +106,17 @@ than Colemak. However, I don't think they tell the real story:
   an important decision. Try typing `stretch` on Colemak an realize the
   slowness of your left hand changing direction 3 times.)_
 
-- **SFBs** are almost completely on the four "strength columns" and so mostly fine
+- **SFBs** are almost completely on the "strength columns" and so mostly fine
   with index and middle (particularly with [anatak][4]). Qwerty and Colemak are
   both actually good at this too (but see next point). (I tried going up to 3
   SFBs there and that just got messy.)
 
 - The remaining 0.48% SFBs are `br` (not `rb`) and `rk` (not much `kr`), which
-  are **_downward-overlap_ alts**, and are reasonable with ring-middle. That's
-  important, and in in contrast to Colemak's _upward_ `rw` DSFB (where you
-  have to shift or slide or use ring-pinky). The same is true on the
-  right-hand with `ui` (Colemak is pretty good in with these too).
+  are **_downward-overlap_ alts**, and are reasonable with ring-middle (or
+  magic). That downward part is important, and in in contrast to Colemak's
+  _upward_ `rw` DSFB (where you have to shift or slide or use ring-pinky). The
+  same is true on the right-hand with `ui` (Colemak is pretty good in with
+  these too).
 
 - Having a _few_ terrible patterns is ok so long as you have **magic**
   (left-thumb) workarounds (up to maybe 8): `any` (`a◊`), `back`, `why`, `one`
@@ -133,10 +135,10 @@ than Colemak. However, I don't think they tell the real story:
 - It's more **inward-rolly** than it looks. This is true of other layouts too,
   but Flowrist has a little more by design with `wh`. It also inherited a few
   from Colemak like `pt` (and `sc` is ok). Other decent ones are `m.v`, `mp`,
-  `t.m`, `t.d`. I'd like to see layouts go further with the concept and design
-  for strength columns to have a lot more of these; slots `nh`, `td`, and even
-  `pt` are missed opportunities! Well, so are `fp` and `cd`, but at least we
-  have a lot of these for combos.
+  `t.m`, `t.d` (if you can call those true rolls). I'd like to see layouts go
+  further with the concept and design for strength columns to have a lot more
+  of these; slots `nh`, `td`, `oe`, and even `pt` are missed opportunities!
+  Well, so are `fp` and `cd`, but at least we have a lot of these for combos.
 
 - **Rolls** overall are way undercalculated. If you count `pt`, `sc`, `wh`,
   `mp`, you see another 8+%, bringing the actual total to well above 50%.
@@ -310,10 +312,10 @@ get comfortable.
 
 ## Fun new roll patterns somewhat unique to Flowrist
 
-`au`, `bl`, `mp`, `wh`, `w/y/hou`, `ue`, `gr`, `ion`, `fl`, `xp`, `xt`,
+`au`, `bl`, `mp`, `wh`, `w/y/hou`, `ue`, `gr`, `ion`, `oi`, `fl`, `xp`, `xt`,
 `ck`, `sm`, `sl`, `sk`, `lk`
 
-Plus the usual Colemak goodies: `pt`, `sc`, `fs`
+Plus the usual Colemak unrecognized goodies: `pt`, `sc`, `fs`
 
 ## Similarity to Colemak
 
@@ -326,13 +328,16 @@ Plus the usual Colemak goodies: `pt`, `sc`, `fs`
 I called `y` a similarity because you know it immediately from qwerty days.
 `u` is a "minor" move.
 
+## Transitional
+
 If you want to keep it more similar to Colemak, or do a transitional, you can
-do this, where the only 6 major moves are `wolavm`:
+do this, where the only 6 significant moves are `wolavm`. This will give you a
+pretty good taste of Flowrist without all the upfront mental effort:
 
 ```
-  Q k F P B   Y w o U
+  Q z F P B   Y w o U
   l R S T G   j N E I a
-  v X C D m   z H
+  v X C D m   K H
 ```
 
 ## Magic config
@@ -345,7 +350,7 @@ that I feel are worth macro-ing via [repeat key][16]:
 - `'` -> `\bI'`
 - `h` -> `how`
 - `i` -> `ious`
-- `j` -> `\bback` (that's a backspace to remove the `j`!)
+- `"` -> `\bback` (that's a backspace to remove the `"`!)
 - `q` -> `\bprob`
 - `o` -> `one` (maybe, but `oo` is probably more important)
 - `w` -> `why`
@@ -384,7 +389,8 @@ plunge.
 
 It's not unreasonable to _use a combo as a key_. Using `gk` for `z` and `cd`
 for `j` is working well for me. So it might be ok to do it for any of `x` and
-`k` too.
+`k` too. If you really want a first-class `j`, repace the `"` with it at
+upper-left-pinky.
 
 I'm uncertain about _hand balance_ and if it's overrated. The perfect letter at
 Qwerty-H has big potential. Maybe that's a repeat-key. I have it as `Ctrl-c`
@@ -394,16 +400,22 @@ There are "chunks" out there with great potential for magic. I'm using `how`,
 `any`, `one`, `prob`, and those are pretty good for Flowrist but there may be
 opportunities here for other layouts.
 
-_Rolls_ are great (though some prefer alternates, and they're great too of
-course). However, to achieve really high rolls, you'd need to intermix vowels
-and consonants on the hands. But this is so bad for redirects, so you have to
-choose your tradeoff.
+_Rolls_ are great (though some prefer alternates-heavy, and they're great too
+of course). However, to achieve really high rolls, you'd need to intermix
+vowels and consonants on the hands. But this is so bad for redirects, so you
+have to choose your tradeoff.
+
+It was challenging to separately fit both a _repeat_ and _magic_ key, for
+cognitive load, and lack of real estate. I found that a single key (I call
+_regic_) sufficed for both purposes, since there wasn't too much magic needed,
+and there were enough non-repeating keys to use for magic.
 
 The optimizers we have available to us are incredibly powerful tools. And
 there is room for other metrics and different ways to calculate what is
 presently measured. My main conclusion is that there is enough uncertainty and
 personal preference involved that probably the safest way to choose a layout
-is simply using the one that hurts the least. For me, that means:
+is simply using the one that hurts the least, and still keeps SFBs below
+~3%. For me, that means:
 
 - finding the right SFBs on the stongest fingers, and using pinky and ring
   with the fewest contortions.
@@ -442,16 +454,16 @@ I've seen/tried for that spot.
 (y◊), but is otherwise surprisingly good there, especially for `yo...`. And it's
 familiar from Qwerty.
 
-**Indexes are overloaded**. Yes `tpmvd` together result in 1.5% and 0.5% in
-D/SFBs, but in practice almost all of their patterns work very well with some
-practice on their _index-middle_ dances.
+**Indexes are overloaded**. Yes `tpmvd` together on left-index result in 1.5%
+and 0.5% in D/SFBs, but in practice almost all of their patterns work very
+well with some practice on their _index-middle_ dances.
 
-**Shortcuts left the left (non-mouse) hand**. Yeah, but there was no way `a`
-could stay on left. `w` is the other unfortunate victim. Outside of Emacs, I
-use triple-click more often now instead of `Ctrl-a`. And I QMK-mapped `jr`
+**Some `Ctrl-` shortcuts left the left (non-mouse) hand**. There was no way
+`a` could stay on left. `w` is the other unfortunate victim. Outside of Emacs,
+I use triple-click more often now instead of `Ctrl-a`. And I QMK-mapped `jr`
 combo to be `Ctrl-w`. And `bf` to be `Ctrl-Tab`. On the bright side, you now
-have `Ctrl-l` on the left. And it does help to have a `Ctrl` on the right hand
-too. You can probably re-bind some alternate on left-hand to handle the
+have `Ctrl-l` on the left. And it does help to have a `Ctrl` key on the right
+hand too. You can probably re-bind some alternate on left-hand to handle the
 missing shortcuts.
 
 ## What's really wrong with Colemak?
@@ -492,7 +504,8 @@ fantastic. `crst` works well, and `g` is nice there, and `f` is good on
 RHS. But here's what I couldn't live with:
 
 - `m` could never work alongside `n` on right-hand. Way too much LSB and
-  redirects from it.
+  redirects from it. It does help rolls being on right, but not worth the
+  cost, IMO.
 
 - More divergent from Colemak than was necessary, especially in the core with
   `f` and `c` moving.
@@ -503,8 +516,8 @@ RHS. But here's what I couldn't live with:
 
 Side note: I originally hated the `one` pattern, but ended up with it in
 Flowrist anyway, and decided that it was acceptable since I had a magic
-workaround for it. But then I got used to it, and now don't feel that it's so
-godawful.
+workaround for it. But then I tried typing it enough (`imr`) and got used to
+it, and now don't feel that it's so godawful.
 
 ## FAQs
 
@@ -516,6 +529,13 @@ godawful.
 
 - **Do I need the adaptive `nh`?** _No, it'll work fine without, but you lose
   the crazy-high home-row stats._
+
+## Variations
+
+One of my least favorite positions is `b` (for the `br` D/SFBs). It could be
+moved to Qwerty-`h`, but that doubles the LSBs and makes redirects slightly
+worse. It can also go in Qwerty-`t`, swapped with `x` (like Colemak), but I
+like that less.
 
 ## Transitional Intermediate from QWERTY
 
@@ -551,16 +571,32 @@ cold-turkey directly to full Flowrist).
 [18]: https://candykeys.com/product/katana60-pcb-V2
 
 
-<!-- Hi! Wanted to share the "Flowrist" layout I finally landed on. It might not be -->
-<!-- practical for most (aka anyone), given the "inverted symmetric-stagger" -->
-<!-- keyboard I use, but hopefully some of the ideas in the "experience -->
-<!-- report"-style write-up I made here are interesting/useful to some: -->
-<!-- https://github.com/MicahElliott/flowrist -->
+Hi! Wanted to share the "Flowrist" layout I finally landed on. It might not be
+practical for most, given the "inverted symmetric-stagger" (aka upside-down)
+keyboard I use (though katana60 boards are available!), but hopefully some of
+the ideas in the write-up I made here are interesting/useful to some:
+https://github.com/MicahElliott/flowrist
+
+```
+\   " b f p x  \    /  y w o u ' /
+ \   l r s t m  \  /    ŋ e i a /
+  \ q g k c d v  \/  n h / . , /
+           ◊ ⇑        ⇐ _
+```
+
+What I hope makes this worth a read is the that it tries to harmonize from the
+beginning: an adaptive key, a different kind of keyboard, two active thumbs,
+all vowel-likes on the right hand, editor spatial awareness, `l` where it's
+never been, three letters hidden or in odd places, and a magic/repeat
+multi-purpose key.
+
+I think it could be used on a matrix-style keyboard too, so if any Colemakkers
+wanna give it a try, it aims to be a close derivative.
 
 <!-- I'm not planning presently to change much about it since it's working well for -->
 <!-- me, but certainly interested in hearing from the knowlegdeable folks I've -->
-<!-- learnd so much from reading here (and anyone): if there are any obvious flaws -->
-<!-- or expected eventual pain points or clear improvements, etc. Also a big -->
+<!-- learned so much from reading here (and really anyone): if there are any obvious flaws -->
+<!-- or expected eventual pain points or clear improvements or WTFs, etc. Also a big -->
 <!-- shout-out to Oxey, Cyanophage, phbonacci, and several others for their -->
 <!-- analyzers, analysis, and layouts that have been so inspiring to make it -->
 <!-- possible for plebs like me to be able to make a layout! -->
