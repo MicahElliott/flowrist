@@ -91,13 +91,16 @@ have felt on any of the many layouts I've tried.
 The SFBs in particular look not great at all, and in some ways actually worse
 than Colemak. However, I don't think they tell the real story:
 
-- If you discount the index and middle SFBs, you're left with:
+- If you discount the index and middle SFBs (because most of the others are designed
+  to be easy-alts), you're left with:
   > - Sfb:  0.48%
   > - Dsfb: 1.29%
 
-- **Redirects** at _4.2_ sounds suboptimal due to the `n` on right-hand, but actually
-  _feels_ ok with index: ∴ `n` on vowel-hand is ok only if index (and many
-  layouts have done this). Compare this to Colemak's 10.5% and Qwerty's 13.2%.
+- **Redirects** at _4.2_ sounds suboptimal due to the `n` (with `h`) on
+  right-hand, but actually _feels_ ok with index: ∴ `n` on vowel-hand is ok
+  only if index (and many layouts have done this), especially since it's
+  adaptive (eg, `tHiNk` is a same-finger redirect). Compare this to Colemak's
+  10.5% and Qwerty's 13.2%.
 
   _(You could get redirects down to almost nothing if you move the `ŋ` to
   thumb. I didn't find that worth it since redirects with index are not a
@@ -108,15 +111,15 @@ than Colemak. However, I don't think they tell the real story:
 
 - **SFBs** are almost completely on the "strength columns" and so mostly fine
   with index and middle (particularly with [anatak][4]). Qwerty and Colemak are
-  both actually good at this too (but see next point). (I tried going up to 3
-  SFBs there and that just got messy.)
+  both actually good at this too (but see next point). (I tried going up to 3%
+  SFBs there and that got messy.)
 
 - The remaining 0.48% SFBs are `br` (not `rb`) and `rk` (not much `kr`), which
   are **_downward-overlap_ alts**, and are reasonable with ring-middle (or
   magic). That downward part is important, and in in contrast to Colemak's
   _upward_ `rw` DSFB (where you have to shift or slide or use ring-pinky). The
-  same is true on the right-hand with `ui` (Colemak is pretty good in with
-  these too).
+  same is true on the right-hand with `ui` (Colemak is pretty good with these
+  too).
 
 - Having a _few_ terrible patterns is ok so long as you have **magic**
   (left-thumb) workarounds (up to maybe 8): `any` (`a◊`), `back`, `why`, `one`
@@ -593,10 +596,10 @@ multi-purpose key.
 I think it could be used on a matrix-style keyboard too, so if any Colemakkers
 wanna give it a try, it aims to be a close derivative.
 
-<!-- I'm not planning presently to change much about it since it's working well for -->
-<!-- me, but certainly interested in hearing from the knowlegdeable folks I've -->
-<!-- learned so much from reading here (and really anyone): if there are any obvious flaws -->
-<!-- or expected eventual pain points or clear improvements or WTFs, etc. Also a big -->
-<!-- shout-out to Oxey, Cyanophage, phbonacci, and several others for their -->
-<!-- analyzers, analysis, and layouts that have been so inspiring to make it -->
-<!-- possible for plebs like me to be able to make a layout! -->
+I'm not planning presently to change much about it since it's working well for
+me, but certainly interested in hearing from the knowlegdeable folks I've
+learned so much from reading here (and really anyone): if there are any obvious flaws
+or expected eventual pain points or clear improvements or WTFs, etc. Also a big
+shout-out to Oxey, Cyanophage, phbonacci, and several others for their
+analyzers, analysis, and layouts that have been so inspiring to make it
+possible for plebs like me to be able to make a layout!
