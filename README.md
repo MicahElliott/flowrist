@@ -20,20 +20,20 @@ to try Flowrist with just 6 moves from Colemak.
 
 ```
 √ " b f p x   y w o u '
-  l r s t m   ¢ ŋ e i a
+^ l r s t m   ¢ ŋ e i a
 q g k c d v   n h / . ,
        ◊ ⇑     ⇐ _
 ```
 
 (`√` is _compose_, `◊` is _magic_, `ŋ` is `nh` _adaptive_, `¢` is `Ctrl-c`,
-`j` (`px`) and `z` (`gk`) are combos, and all of these are optional)
+`j` (`cd`) and `z` (`gk`) are combos, and all of these are optional)
 
 It's really designed to be used with a reverse-symmetric-stagger keyboard (to
 make the SFB overlaps easier) as:
 
 ```
-\   " b f p x  \    /  y w o u ' /
- \   l r s t m  \  /    ŋ e i a /
+\ √ " b f p x  \    /  y w o u ' /
+ \ ^ l r s t m  \  /  ¢ ŋ e i a /
   \ q g k c d v  \/  n h / . , /
            ◊ ⇑        ⇐ _
 ```
@@ -71,10 +71,10 @@ others to 60 before getting distracted and regressing to more changes. It's
 taken me ~5 significant iterations over 6 months to arrive at _Flowrist_.
 After a few weeks on Flowrist I have had some bursts to 120, and didn't feel
 any obvious bottlenecks that would limit faster fingers from going further.
-Especially given the no-SFBs patterns listed below. It has been tested by me
-on up to English-10k, plus all the potentially awkward trigrams from [this
-post][12]. I'm obviously biased, but this is the most comfortable my wrists
-have felt on any of the many layouts I've tried.
+Especially given the no-SFBs patterns listed below (~50 of them). It has been
+tested by me on up to English-10k, plus all the potentially awkward trigrams
+from [this post][12]. I'm obviously biased, but this is the most comfortable
+my wrists have felt on any of the many layouts I've tried.
 
 ## Defying the analyzers
 
@@ -213,27 +213,36 @@ be changed to suit your prefs.
 
 ## Less natural patterns for practice (for no D/SFBs!)
 
-Every layout will have some challenging patterns. I want them to be well known
+Every layout will have some _challenging patterns_. They should be well known
 so that they can be practiced. The fastest typists in the world mostly still
 use Qwerty, and they do that by constantly shifting and contorting their hands
 to avoid SFBs. Flowrist was designed to turn the tort into comfortable
 overlaps and minor shifts.
 
-This section contains most of those patterns I've adopted, and is more for
-future reference. If you find yourself ever slow (sliding) on a D/SFB, refer
-to this. The `imrp` are for fingers: `i`ndex, `m`iddle, `r`ing, `p`inky. A `.`
-means _uninteresting_.
+This section contains most of those patterns I've adopted (which are
+optional), and is more for future reference, rather than a starting point. If
+you find yourself ever slow (sliding) on a D/SFB, refer to this. The `imrp`
+are for fingers: `i`ndex, `m`iddle, `r`ing, `p`inky. A `.` means
+_uninteresting_.
 
-Eg, although many folks may be comfortable with the `ho` index-middle (`im`)
+Note that some patterns are not listed because they're expected to happen
+without much thought or training. Eg, the word `type` naturally _starts_ the
+_index_ on `t` and then the _middle_ actually wants to rotate above it to hit
+the `p`, thus avoiding the DSFB. With `case` it's the same but with _middle_
+then _ring_ for `c` and `s`. Contrast these with `put` where you have to train
+your _middle_ to _start_ the word with an alted position; that's one of many
+trainable patterns this section focuses on.
+
+Although many folks may be comfortable with the `ho` index-middle (`im`)
 stretch-reach, I am generally not (except maybe the `hou` case), so it is
 usually _index-ring_ (which leaves _middle_ open for `n`). And _index-pinky_
-for `hu`.
+for `hu`. Hungry now? :)
 
 There are a few rare cases where the `ŋ` will surprise you. Eg, `own` has to be
 bare-`n` since the `wŋ` sequence needs to resolve as `wh`. So you'll want to
 reach for `o` with _ring_ (to actually get a nice roll out of it).
 
-- `thin`/`than` (same index for `n` and `h`)
+- `thin`/`than` (same adaptive index for `n` and `h`)
 - `own/sign/snow` (bare-n)
 - `han` (`mpi`) (long pinky stretch)
 - `rope` (`.m.i`)
@@ -258,7 +267,7 @@ reach for `o` with _ring_ (to actually get a nice roll out of it).
 - `exp/ext` (`.im`)
 - `they` (`.mri`) (shift)
 - `move` (`mimi`)
-- `pit/pat/put/pet/pot/peat` (`m.i`) (`p` is often middle)
+- `pit/pat/put/pet/pot/peat` (`m.i`) (`p` is often middle; just look ahead for `t`)
 - `part` (`m.pi`) (very often!)
 - `step` (`rmi`)
 - `soft` (`m.ri`)
@@ -280,7 +289,7 @@ reach for `o` with _ring_ (to actually get a nice roll out of it).
 - `ber` (`r.m`)
 - `number` (`..ip.r`)
 - `tod` (`m.i`)
-- `empty` (hard!)
+- `empty` (`.irm.`) (hard!)
 - `minu` (`.rip`)
 - `himself` (`..i.mpr`) (hard!)
 - `str` (terrible redirect from colemak!)
@@ -519,8 +528,8 @@ RHS. But here's what I couldn't live with:
 
 Side note: I originally hated the `one` pattern, but ended up with it in
 Flowrist anyway, and decided that it was acceptable since I had a magic
-workaround for it. But then I tried typing it enough (`imr`) and got used to
-it, and now don't feel that it's so godawful.
+workaround for it. But then I tried typing it enough (`imr` or `rim`) and got
+used to it, and now don't feel that it's so godawful.
 
 ## FAQs
 
@@ -587,19 +596,21 @@ https://github.com/MicahElliott/flowrist
            ◊ ⇑        ⇐ _
 ```
 
-What I hope makes this worth a read is the that it tries to harmonize from the
+What I hope makes this worth a read is that it tries to harmonize from the
 beginning: an adaptive key, a different kind of keyboard, two active thumbs,
-all vowel-likes on the right hand, editor spatial awareness, `l` where it's
-never been, three letters hidden or in odd places, and a magic/repeat
-multi-purpose key.
+all vowel-likes on the right hand (even `w`), editor spatial awareness, `l`
+where it's never been, three letters hidden or in odd places, and a
+magic/repeat multi-purpose key. There's also an alt-fingering practice guide
+and a one-step tarmak-like transitional layout.
 
 I think it could be used on a matrix-style keyboard too, so if any Colemakkers
 wanna give it a try, it aims to be a close derivative.
 
 I'm not planning presently to change much about it since it's working well for
 me, but certainly interested in hearing from the knowlegdeable folks I've
-learned so much from reading here (and really anyone): if there are any obvious flaws
-or expected eventual pain points or clear improvements or WTFs, etc. Also a big
-shout-out to Oxey, Cyanophage, phbonacci, and several others for their
-analyzers, analysis, and layouts that have been so inspiring to make it
-possible for plebs like me to be able to make a layout!
+learned so much from reading here (and really anyone): if there are any
+obvious flaws or expected eventual pain points or clear improvements or WTFs,
+etc. Also a big shout-out to Oxey, Cyanophage, phbonacci, someguy3, iandoug,
+and several others for their analyzers, open analysis discussions, and layouts
+that have been so inspiring to make it possible for plebs like me to be able
+to make a layout!
