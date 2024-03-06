@@ -123,8 +123,13 @@ than Colemak. However, I don't think they tell the real story:
 
 - Having a _few_ terrible patterns is ok so long as you have **magic**
   (left-thumb) workarounds (up to maybe 8): `any` (`a◊`), `back`, `why`, `one`
-  (`u◊`), `ious`, `yeah`; and these apply nicely as composable chunks:
+  (`u◊`), `ious`, `how`, `yeah`; and these apply nicely as composable chunks:
   `anyone` -> `a◊u◊`, `many` -> `ma◊`, `glorious` -> `g◊ori◊`
+
+- Those "terrible patterns" happen in any layout, and addressing them with
+  magic is a huge win, considering that those 3+-letter chunks (or full words)
+  comprise nearly 1% of the top-10,000 words. That means nearly 100 of the
+  hardest words are practically free to type.
 
 - **LSB** (lateral) hand-shifting by one key is feasible: `MoVe` and `SySTEM` and
   `ONlY` move left-hand to the right one position, but it's easy enough with
@@ -297,6 +302,7 @@ reach for `o` with _ring_ (to actually get a nice roll out of it).
 - `leg` (`p.r`)
 - `quiet` (`.rmi.`) (or `qu◊et`)
 - `techno` (`...ii.`)
+- `exact` (`.i.rm`) (left-shifted)
 - `note` (`ir.m`) (hard!)
 - `committee/keenness/whippoorwill/barrenness/unsuccessfully`
   (_repeat_ practice, full coverage!)
@@ -409,8 +415,8 @@ Qwerty-H has big potential. Maybe that's a repeat-key. I have it as `Ctrl-c`
 presently (for Emacs etc).
 
 There are "chunks" out there with great potential for magic. I'm using `how`,
-`any`, `one`, `prob`, and those are pretty good for Flowrist but there may be
-opportunities here for other layouts.
+`any`, `one`, `prob`, and a few others, and those are pretty good for Flowrist
+but there may be opportunities here for other layouts.
 
 _Rolls_ are great (though some prefer alternates-heavy, and they're great too
 of course). However, to achieve really high rolls, you'd need to intermix
