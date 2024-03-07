@@ -16,7 +16,7 @@ with ~13 moves (see section below for intermediate layout). The intentionally
 high SFBs (still under 2%) are almost all middle-to-index finger overlaps, and
 applying that overlap technique actually brings the elbows outward into a more
 natural wrist position. See the [transitional](#transitional) section below
-to try Flowrist with just 6 moves from Colemak.
+to try Flowrist with just 5 moves from Colemak.
 
 ```
 √ " b f p x   y w o u '
@@ -99,8 +99,8 @@ than Colemak. However, I don't think they tell the real story:
 - **Redirects** at _4.2_ sounds suboptimal due to the `n` (with `h`) on
   right-hand, but actually _feels_ ok with index: ∴ `n` on vowel-hand is ok
   only if index (and many layouts have done this), especially since it's
-  adaptive (eg, `tHiNk` is a same-finger redirect). Compare this to Colemak's
-  10.5% and Qwerty's 13.2%.
+  adaptive (eg, `tHiNk` is a same-finger redirect). _Compare this to Colemak's
+  10.5% and Qwerty's 13.2%._
 
   _(You could get redirects down to almost nothing if you move the `ŋ` to
   thumb. I didn't find that worth it since redirects with index are not a
@@ -128,13 +128,13 @@ than Colemak. However, I don't think they tell the real story:
 
 - Those "terrible patterns" happen in any layout, and addressing them with
   magic is a huge win, considering that those 3+-letter chunks (or full words)
-  comprise nearly 1% of the top-10,000 words. That means nearly 100 of the
-  hardest words are practically free to type.
+  comprise nearly 1% of the top-10,000 words (and 3% of the top-1,000). That
+  means nearly 100 of the hardest words are practically free to type.
 
-- **LSB** (lateral) hand-shifting by one key is feasible: `MoVe` and `SySTEM` and
-  `ONlY` move left-hand to the right one position, but it's easy enough with
-  some practice; other examples: `MuST`, `tHEY` (and see many more below;
-  those are all hard examples!)
+- **LSB** (lateral) hand-shifting by one key is feasible: `MoVe` and `ONlY`
+  move a hand to one position, but it's easy enough with some practice; other
+  examples: `MuST`, `tHEY` (and see many more below; those are all hard
+  examples!)
 
 - The **LSB** (lateral) score of _0.95_ is misleading. I consider it closer to
   _0.2_ since almost all of it is due to the `yo` roll-stretch (and a little
@@ -349,13 +349,13 @@ I called `y` a similarity because you know it immediately from qwerty days.
 ## Transitional
 
 If you want to keep it more similar to Colemak, or do a transitional, you can
-do this, where the only 6 significant moves are `wolavm`. This will give you a
+do this, where the only 5 significant moves are `wolam`. This will give you a
 pretty good taste of Flowrist without all the upfront mental effort:
 
 ```
   Q z F P B   Y w o U
   l R S T G   j N E I a
-  v X C D m   K H
+  m X C D V   K H
 ```
 
 ## Magic config
@@ -471,6 +471,11 @@ I've seen/tried for that spot.
 **`y` is awkward**. It needs _magic_ for _any (a◊)_, _why_ (w◊), and _yeah_
 (y◊), but is otherwise surprisingly good there, especially for `yo...`. And it's
 familiar from Qwerty.
+
+**`v` and `m` look like stretches ... but aren't.** It's exciting when you
+find spots for things that just fit. The only downside I feel with `v` is that
+`Ctrl-v` is very common in Emacs (and others' paste) and is a far stretch.
+However, _god-mode_ takes care of this.
 
 **Indexes are overloaded**. Yes `tpmvd` together on left-index result in 1.5%
 and 0.5% in D/SFBs, but in practice almost all of their patterns work very
@@ -605,9 +610,9 @@ https://github.com/MicahElliott/flowrist
 What I hope makes this worth a read is that it tries to harmonize from the
 beginning: an adaptive key, a different kind of keyboard, two active thumbs,
 all vowel-likes on the right hand (even `w`), editor spatial awareness, `l`
-where it's never been, three letters hidden or in odd places, and a
+where it's maybe never been, three letters hidden or in odd places, and a
 magic/repeat multi-purpose key. There's also an alt-fingering practice guide
-and a one-step tarmak-like transitional layout.
+and a one-step tarmak-like 5-move transitional layout.
 
 I think it could be used on a matrix-style keyboard too, so if any Colemakkers
 wanna give it a try, it aims to be a close derivative.
