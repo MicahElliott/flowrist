@@ -41,6 +41,13 @@ make the SFB overlaps easier) as:
 _(It has been tried on a matrix-style keyboard and still felt good, but needs
 much more trial.)_
 
+Flowrist harmonizes from the beginning: an adaptive key, a different kind of
+keyboard, two active thumbs, all vowel-likes on the right hand (even `w`),
+editor spatial awareness, `l` where it's maybe never been, three letters
+hidden or in odd places, and a magic/repeat multi-purpose key. Here you'll
+also find an alt-fingering practice guide and a one-step tarmak-like 5-move
+transitional layout.
+
 The novelties/surprises here:
 
 - `ŋ` (`nh`) is an _adaptive_ key, defaulting to `n`, but `h` after other letters
@@ -168,7 +175,7 @@ advantageous tweaks for [Anatak][4], and doesn't count the adaptive `ŋ`:
 > - Total Word Effort: 1032
 > - Effort: 400
 
-## Spatially tuned for code editors (Emacs and maybe others)
+## Spatially tuned for code editors (Emacs, shells, and maybe others)
 
 The most common code-editor command-letters are in strong and spatially
 meaningful positions. Vim is completely ignored since it was built
@@ -177,10 +184,16 @@ IMO (though modal editing with god-mode, meow, etc can be great). I found
 layouts that put `n` (next) and `b` (back) and other repeatables on pinky were
 taxing it (graphite, gallium, engram, carbyne, beakl).
 
-Notice that the `bf` pairing is spatially reflective of _back/forward_. Same
-with other pairings: `pn` for _prev/next_. `ywh` for _yank/save/select_.
-`ae` for _start/end_ (though backwards). `sr` for _search/reverse_. `xv` for
-_cut/paste_ (but macros preferred). `SPC` and `BSPC` for next/prev page etc.
+Here are the directional/spatial pairings:
+
+- `bf`  — _back/forward_
+- `pn`  — _prev/next_ (`p` is high, `n` is low)
+- `ywh` — _yank/save/select_ (clustered, all right-index)
+- `ae`  — _start/end_ (though backwards)
+- `sr`  — _search (forward)/reverse_
+- `qg`  — _quit/cancel_
+- `xv`  — _cut/paste_ (non-editor apps; but macros preferred)
+- `SPC`/`BSPC` — next/prev page etc.
 
 Other happy accident pairs: `y/n` — yes/no; `l/r` — left/right
 
