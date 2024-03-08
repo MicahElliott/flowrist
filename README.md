@@ -67,17 +67,18 @@ The novelties/surprises here:
   `mp`, `ft`, especially comfortable, and even 2-row hops like `f.c`
   (_middle-index_) are easy
 
-There is a (barely scrutable) [example QMK implementation of Flowrist for
-Anatak][17], with _magic_ and _adaptive_ keys, where the mapping is
+There is a (barely scrutable)
+[example QMK implementation of Flowrist for Anatak][17], with _magic_ and
+_adaptive_ keys, where the mapping is
 upside-down (because the keyboard is an upside-down [Katana60][18]). Note
 you're on the `thumbin` branch.
 
 Caveat about the designer: I am not a speedy typist; have only gotten to 100
-wpm on qwerty, same on Colemak, and typically only take my own designs and
-others to 60 before getting distracted and regressing to more changes. It's
-taken me ~5 significant iterations over 6 months to arrive at _Flowrist_.
-After a few weeks on Flowrist I have had some bursts to 120, and didn't feel
-any obvious bottlenecks that would limit faster fingers from going further.
+wpm on qwerty, same on Colemak, and have a history of only take my own designs
+and others to <60 before getting distracted and making more changes. It's taken
+me ~5 significant iterations over 6 months to arrive at _Flowrist_. After a
+few weeks on Flowrist I have had some bursts to 120, and didn't feel any
+obvious bottlenecks that would limit faster fingers from going further.
 Especially given the no-SFBs patterns listed below (~50 of them). It has been
 tested by me on up to English-10k, plus all the potentially awkward trigrams
 from [this post][12]. I'm obviously biased, but this is the most comfortable
@@ -145,7 +146,8 @@ than Colemak. However, I don't think they tell the real story:
 
 - The **LSB** (lateral) score of _0.95_ is misleading. I consider it closer to
   _0.2_ since almost all of it is due to the `yo` roll-stretch (and a little
-  `ye`) which is same-row (and even less stretch on anatak).
+  `ye`) which is same-row (and even less stretch on anatak). And compare that
+  to Colemak/DH's atrocious 3.5/2%!
 
 - It's more **inward-rolly** than it looks. This is true of other layouts too,
   but Flowrist has a little more by design with `wh`. It also inherited a few
@@ -284,7 +286,7 @@ reach for `o` with _ring_ (to actually get a nice roll out of it).
 - `fact/fect/sect` (`r.mi`)
 - `exp/ext` (`.im`)
 - `they` (`.mri`) (shift)
-- `move` (`mimi`)
+- `move` (`mmii`)
 - `pit/pat/put/pet/pot/peat` (`m.i`) (`p` is often middle; just look ahead for `t`)
 - `part` (`m.pi`) (very often!)
 - `step` (`rmi`)
@@ -361,15 +363,19 @@ I called `y` a similarity because you know it immediately from qwerty days.
 
 ## Transitional
 
-If you want to keep it more similar to Colemak, or do a transitional, you can
-do this, where the only 5 significant moves are `wolam`. This will give you a
-pretty good taste of Flowrist without all the upfront mental effort:
+If you want to keep it more similar to Colemak, or do a transitional approach,
+you can do the following, where the only 5 significant moves are `wolam` (but
+don't get too settled with the painful `m`!). This will give you a pretty good
+taste of Flowrist without _all_ the upfront mental effort:
 
 ```
   Q z F P B   Y w o U
   l R S T G   j N E I a
   m X C D V   K H
 ```
+
+After you've got that down, the next most important moves are `m/g`, and then
+`b/z`.
 
 ## Magic config
 
