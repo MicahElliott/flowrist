@@ -44,9 +44,9 @@ much more trial.)_
 Flowrist harmonizes from the beginning: an adaptive key, a different kind of
 keyboard, two active thumbs, all vowel-likes on the right hand (even `w`),
 editor spatial awareness, `l` where it's maybe never been, three letters
-hidden or in odd places, and a magic/repeat multi-purpose key. Here you'll
-also find an alt-fingering practice guide and a one-step tarmak-like 5-move
-transitional layout.
+hidden or in odd places, a magic/repeat multi-purpose key, and an easy-compose
+for non-English. Here you'll also find an alt-fingering practice guide and a
+one-step tarmak-like 5-move transitional layout.
 
 The novelties/surprises here:
 
@@ -267,7 +267,7 @@ reach for `o` with _ring_ (to actually get a nice roll out of it).
 - `han` (`mpi`) (long pinky stretch)
 - `rope` (`.m.i`)
 - `open` (`r.mi`)
-- `one` (`rim`) (or magic)
+- `one` (`rim`) (scrunch, or magic)
 - `only` (`rm.i`) (hand-shift and hard down-up))
 - `deny` (`.rmi`) (shift)
 - `who/whe` (`mir`)
@@ -280,15 +280,16 @@ reach for `o` with _ring_ (to actually get a nice roll out of it).
 - `people` (`.mr...`)
 - `goes/does` (`.ri.`)
 - `met` (`i.m`)
+- `move` (`mmii`)
 - `middle` (`i.m◊p.`)
-- `time` (`m.i.`)
+- `time` (`m.i.`) (shift)
 - `face` (`r.i.`)
 - `fact/fect/sect` (`r.mi`)
 - `exp/ext` (`.im`)
 - `they` (`.mri`) (shift)
-- `move` (`mmii`)
 - `pit/pat/put/pet/pot/peat` (`m.i`) (`p` is often middle; just look ahead for `t`)
 - `part` (`m.pi`) (very often!)
+- `post` (`m.ri`)
 - `step` (`rmi`)
 - `soft` (`m.ri`)
 - `complete` (`m.imp...`)
@@ -297,7 +298,6 @@ reach for `o` with _ring_ (to actually get a nice roll out of it).
 - `dev` (`m.i`)
 - `show` (`.irm`)
 - `simple` (`r.imp.`)
-- `post` (`m.ri`)
 - `hey` (`mri`)
 - `they` (`.mri`) (home-`h`)
 - `second` (`mmirii`)
@@ -307,8 +307,10 @@ reach for `o` with _ring_ (to actually get a nice roll out of it).
 - `drop` (`ir.m`)
 - `dep` (`i.m`)
 - `ber` (`r.m`)
+- `fast/bars` (`r.mi`)
+- `ying` (`ipm.`) (shift)
 - `number` (`..ip.r`)
-- `tod` (`m.i`)
+- `tod/ted` (`m.i`)
 - `empty` (`.irm.`) (hard!)
 - `minu` (`.rip`)
 - `himself` (`..i.mpr`) (hard!)
@@ -431,7 +433,8 @@ upper-left-pinky.
 
 I'm uncertain about _hand balance_ and if it's overrated. The perfect letter at
 Qwerty-H has big potential. Maybe that's a repeat-key. I have it as `Ctrl-c`
-presently (for Emacs etc).
+presently (for Emacs etc). So right-hand does a lot of work, but it feels like
+not a problem.
 
 There are "chunks" out there with great potential for magic. I'm using `how`,
 `any`, `one`, `prob`, and a few others, and those are pretty good for Flowrist
@@ -469,15 +472,25 @@ that `wh` is a very nice inward roll (which analyzers won't detect) for a gain
 of 3+%. Note also that `wh<vowel>` is always a redirect. However, it feels
 fast and natural with a little practice.
 
-**Vowels on the right**. Most sensible layouts have a vowel-hand to get fewer
-redirects. This is why we have `w` and `h` on the right (as an inward roll);
-`w` is a semi-vowel, and `h` is arguably [not totally a
+**Vowels on the right**. Most performant layouts have a vowel-hand to get
+fewer redirects. This is why we have `w` and `h` on the right (as an inward
+roll): `w` is a semi-vowel, and `h` is arguably [not totally a
 consonant](https://linguistics.stackexchange.com/questions/4834/why-is-h-called-voiceless-vowel-phonetically-and-h-consonant-phonologically)
 and thus works well on the vowel hand. So the exception is `n`. It's over
 there for a couple reasons: tradition (so many will already be comfortable
 with it); and it's the best _adaptive_ combo IMO. It's bad for redirects there
 but a worthwhile compromise. I tried swapping it with `f` (and adaptive `fh`)
-but it wasn't worth it with all the _left-middle_ SFBs on `n`.
+but it wasn't worth it with all the _left-middle_ SFBs on `n`. I can further
+justify `n` being with the vowels since it (ignoring `ç`) is the one non-vowel
+diacritic in Spanish (and French?).
+
+Hand shape is a big consideration. With a non-column-staggered keyboard,
+middle fingers naturally sit high (Qwerty-`f` and -`u` spots) and pinkies sit
+low (Qwerty-`z` and -`/` spots). This is why Flowrist places `o` high on
+right-middle, and `g` and `,` on low-pinkies, making for strong keys. (`f` is
+too low a freq for there but keeping for Colemak compat; `,` is good as an
+editor "leader key".) I would argue that those four spots are the next best
+thing to homem-row.
 
 **`g` on pinky**. There are D/SFBs with `g` and `l`, and the `gl` is terrible,
 so it absolutely needs magic there, at which point it's great. But I'm overall
@@ -507,6 +520,33 @@ combo to be `Ctrl-w`. And `bf` to be `Ctrl-Tab`. On the bright side, you now
 have `Ctrl-l` on the left. And it does help to have a `Ctrl` key on the right
 hand too. You can probably re-bind some alternate on left-hand to handle the
 missing shortcuts.
+
+## Eurolang layer
+
+Flowrist takes the [Compose][21] key into strong consideration for typing
+international characters, by placing the following into easy unshifted reach:
+`'^~"` (and `grave/backtick`). Here are the top two rows to enable just about
+any imaginable diacritic character such as `éàôñçüøœŭ` (here `√` is Compose).
+
+```
+ . . ^ ~ . . .   . . . " . .
+ ` √ b . . . .   . . . u ' .
+ . l r s t . .
+```
+
+The following layer would likely be good for covering just about all of
+French, Spanish, German, Italian, Portuguese, Esperanto (and most of [these
+others][20]), but I haven't yet figured out how to get [key sequence
+macros][19] (eg, `Compose-~-n` -> `ñ` should be the easier `LangLayer-n` since
+the former is tedious to type) working.
+
+```
+ . . ß ĵ . .    ŭ õ
+ . . . ĥ . .    ù ò è ì à ã
+ . . . ŝ . .    ú ó é í á ñ
+ . ĝ ç ĉ . .    û ô ê î â õ
+ . . . . . .    ü ö ë ï ä
+```
 
 ## What's really wrong with Colemak?
 
@@ -611,7 +651,9 @@ cold-turkey directly to full Flowrist).
 [16]: https://github.com/qmk/qmk_firmware/blob/master/docs/feature_repeat_key.md
 [17]: https://github.com/MicahElliott/anatak60/blob/thumbin/keymap.c
 [18]: https://candykeys.com/product/katana60-pcb-V2
-
+[19]: https://getreuer.info/posts/keyboards/macros/index.html
+[20]: http://letterfrequency.org/letter-frequency-by-language/
+[21]: https://en.wikipedia.org/wiki/Compose_key
 
 Hi! Wanted to share the "Flowrist" layout I finally landed on. It might not be
 practical for most, given the "inverted symmetric-stagger" (aka upside-down)
@@ -620,7 +662,7 @@ the ideas in the write-up I made here are interesting/useful to some:
 https://github.com/MicahElliott/flowrist
 
 ```
-\   " b f p x  \    /  y w o u ' /
+\     b f p x  \    /  y w o u ' /
  \   l r s t m  \  /    ŋ e i a /
   \ q g k c d v  \/  n h / . , /
            ◊ ⇑        ⇐ _
@@ -629,9 +671,10 @@ https://github.com/MicahElliott/flowrist
 What I hope makes this worth a read is that it tries to harmonize from the
 beginning: an adaptive key, a different kind of keyboard, two active thumbs,
 all vowel-likes on the right hand (even `w`), editor spatial awareness, `l`
-where it's maybe never been, three letters hidden or in odd places, and a
-magic/repeat multi-purpose key. There's also an alt-fingering practice guide
-and a one-step tarmak-like 5-move transitional layout.
+where it's maybe never been, three letters hidden or in odd places, a
+magic/repeat multi-purpose key, and an easy-compose for non-English. There's
+also an alt-fingering practice guide and a one-step tarmak-like 5-move
+transitional layout.
 
 I think it could be used on a matrix-style keyboard too, so if any Colemakkers
 wanna give it a try, it aims to be a close derivative.
