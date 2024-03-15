@@ -19,7 +19,7 @@ natural wrist position. See the [transitional](#transitional) section below
 to try Flowrist with just 5 moves from Colemak.
 
 ```
-√ " b f p x   y w o u '
+` √ b f p x   y w o u '
 ^ l r s t m   ¢ ŋ e i a
 q g k c d v   n h / . ,
        ◊ ⇑     ⇐ _
@@ -32,7 +32,7 @@ It's really designed to be used with a reverse-symmetric-stagger keyboard (to
 make the SFB overlaps easier) as:
 
 ```
-\ √ " b f p x  \    /  y w o u ' /
+\ ` √ b f p x  \    /  y w o u ' /
  \ ^ l r s t m  \  /  ¢ ŋ e i a /
   \ q g k c d v  \/  n h / . , /
            ◊ ⇑        ⇐ _
@@ -193,8 +193,8 @@ Here are the directional/spatial pairings:
 - `ywh` — _yank/save/select_ (clustered, all right-index)
 - `ae`  — _start/end_ (though backwards)
 - `sr`  — _search (forward)/reverse_
-- `qg`  — _quit/cancel_
-- `xv`  — _cut/paste_ (non-editor apps; but macros preferred)
+- `qg`  — _quit/cancel_ (Emacs, these are really cool!)
+- `cxv`  — _cut/paste_ (non-editor apps; still together, but macros preferred)
 - `SPC`/`BSPC` — next/prev page etc.
 
 Other happy accident pairs: `y/n` — yes/no; `l/r` — left/right
@@ -215,21 +215,22 @@ macros. Eg, I use `gk` as the `z` key. Here is my full set, but these should
 be changed to suit your prefs.
 
 - `gk` — `x`
+- `cd` — `j`
 - `gq` — copy-paste buffer menu
-- `bf` — `C-TAB`
-- `rl` — `TAB` (experimental since `eaRLy`
-- `fp` — screenshot
+- `bf` — `C-TAB` (browser previous)
+- `rl` — `TAB` (experimental since `eaRLy`)
+- `fp` — `=`
+- `tm` — `:`
 - `cd` — `C-c`
-- `jr` — `C-w` (close window, cut)
-- `pv` — `C-v` (paste)
-- `gm` — (but `seGMent`)
-- `tm` —
+<!-- - `jr` — `C-w` (close window, cut) -->
+<!-- - `pv` — `C-v` (paste) -->
+<!-- - `gm` — (but `seGMent`) -->
 - `td` —
-- `lj` —
-- `pj` —
+- `pb` —
 - `.,` — `shift`
 - `,-` — `backtick`
 - `nh` —
+- `h/` — `_`
 
 ## Less natural patterns for practice (for no D/SFBs!)
 
@@ -361,13 +362,13 @@ Plus the usual Colemak unrecognized goodies: `pt`, `sc`, `fs`
 ```
 
 I called `y` a similarity because you know it immediately from qwerty days.
-`u` is a "minor" move.
+`u` is a "minor" move (though admittedly not that easy).
 
 ## Transitional
 
 If you want to keep it more similar to Colemak, or do a transitional approach,
 you can do the following, where the only 5 significant moves are `wolam` (but
-don't get too settled with the painful `m`!). This will give you a pretty good
+don't get too settled with the pinky `m`!). This will give you a pretty good
 taste of Flowrist without _all_ the upfront mental effort:
 
 ```
@@ -381,7 +382,7 @@ After you've got that down, the next most important moves are `m/g`, and then
 
 ## Magic config
 
-Here are the fiddly/stretchy/logjammy (or very common) words from top-1000
+Here are the fiddly/stretchy/logjammy/SFB (or very common) words from top-1000
 that I feel are worth macro-ing via [repeat key][16]:
 
 - `a` -> `any`
@@ -389,11 +390,19 @@ that I feel are worth macro-ing via [repeat key][16]:
 - `'` -> `\bI'`
 - `h` -> `how`
 - `i` -> `ious`
-- `"` -> `\bback` (that's a backspace to remove the `"`!)
-- `q` -> `\bprob`
+- `b` -> `between` (just convenient and easy to rememmber)
 - `o` -> `one` (maybe, but `oo` is probably more important)
 - `w` -> `why`
 - `y` -> `yeah`
+- `u` -> `ui`
+- `g` -> `gl`
+- `j` -> `dj` (since `j` is a combo)
+- `q` -> `\bprob`
+- `x` -> `\bexcept`
+- `^` -> `\bback` (above `b`; that's a backspace to remove the `"`!)
+- `~` -> `\bforward` (above `f` and why not)
+- `v` -> `\btogether` (why not, long common word)
+- `;` -> `\bwithout` (above `w`)
 
 The rest are repeats (`◊e` is `ee`), and `v,k,z` are open for whatever you decide.
 
@@ -509,6 +518,11 @@ find spots for things that just fit. The only downside I feel with `v` is that
 `Ctrl-v` is very common in Emacs (and others' paste) and is a far stretch.
 However, _god-mode_ takes care of this.
 
+**`w/h/n` DSFB takes practice.** With some lookahead, you'll know when to
+adjust index/middle/ring. Once you get used to it, they work well. This is
+probably the quirkiest arrangement in Flowrist, but will hopefully grow on
+you.
+
 **Indexes are overloaded**. Yes `tpmvd` together on left-index result in 1.5%
 and 0.5% in D/SFBs, but in practice almost all of their patterns work very
 well with some practice on their _index-middle_ dances.
@@ -526,7 +540,8 @@ missing shortcuts.
 Flowrist takes the [Compose][21] key into strong consideration for typing
 international characters, by placing the following into easy unshifted reach:
 `'^~"` (and `grave/backtick`). Here are the top two rows to enable just about
-any imaginable diacritic character such as `éàôñçüøœŭ` (here `√` is Compose).
+any imaginable diacritic characters, such as `éàôñçüøœŭȧłå` (here `√` is
+Compose).
 
 ```
  . . ^ ~ . . .   . . . " . .
@@ -534,10 +549,23 @@ any imaginable diacritic character such as `éàôñçüøœŭ` (here `√` is C
  . l r s t . .
 ```
 
+You may have already noticed from typing words like `beauty`, `question`,
+`cruel`, `saint` (and `lieu` isn't so bad), etc, that Français works very well
+with Flowrist, given its vowel layout. Español is great too. The `eu/ue` being
+nice rolls really helps several languages, and most modern layouts struggle
+here in having made those an SFB. And, how many times a day to you type
+`true`?!
+
+More French words to blow your mind:
+
+- oeil
+- étaient
+- avouer
+
 The following layer would likely be good for covering just about all of
 French, Spanish, German, Italian, Portuguese, Esperanto (and most of [these
 others][20]), but I haven't yet figured out how to get [key sequence
-macros][19] (eg, `Compose-~-n` -> `ñ` should be the easier `LangLayer-n` since
+macros][19] (eg, `Compose-~-n` -> `ñ` should be `LangLayer-n` since
 the former is tedious to type) working.
 
 ```
@@ -580,10 +608,10 @@ place to start, if you're not fully convinced that you need something new.
 
 ## So why not just use Canary?
 
-As a Colemak variant, I wanted to make [Canary][6] work for me. It made some
-good steps to reduce redirects, especially some bad ones, and SFBs are
-fantastic. `crst` works well, and `g` is nice there, and `f` is good on
-RHS. But here's what I couldn't live with:
+As a Colemak variant, I wanted to make [Canary][6] work for me, as I was
+trying move beyond Colemak. It made some good steps to reduce redirects,
+especially some bad ones, and SFBs are fantastic. `crst` works well, and `g`
+is nice there, and `f` is good on RHS. But here's what I couldn't live with:
 
 - `m` could never work alongside `n` on right-hand. Way too much LSB and
   redirects from it. It does help rolls being on right, but not worth the
@@ -594,7 +622,7 @@ RHS. But here's what I couldn't live with:
 
 - `r` and `l` together on ring was breaking my wrist with the upward DSFBs.
 
-- Reaching for `w` didn't suit my hand.
+- Reaching far up for `w` didn't suit my hand.
 
 Side note: I originally hated the `one` pattern, but ended up with it in
 Flowrist anyway, and decided that it was acceptable since I had a magic
@@ -683,7 +711,7 @@ I'm not planning presently to change much about it since it's working well for
 me, but certainly interested in hearing from the knowlegdeable folks I've
 learned so much from reading here (and really anyone): if there are any
 obvious flaws or expected eventual pain points or clear improvements or WTFs,
-etc. Also a big shout-out to Oxey, Cyanophage, phbonacci, someguy3, iandoug,
-and several others for their analyzers, open analysis discussions, and layouts
-that have been so inspiring to make it possible for plebs like me to be able
-to make a layout!
+etc, so I could consider fixing them. Also a big shout-out to Oxey,
+Cyanophage, phbonacci, someguy3, iandoug, and several others for their
+analyzers, open analysis discussions, and layouts that have been so inspiring
+to make it possible for plebs like me to be able to make a layout!
