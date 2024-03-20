@@ -58,7 +58,7 @@ The novelties/surprises here:
 - `◊` is the "regic" (repeat/magic) key that does _repeats_ for some (most) and
   _magic_ (multi-letter macros) for others (a few)
 - this isn't great for SFBs according to the analyzers, but it's tuned for a
-  reverse-symmetric-stagger keyboard where SFBs can be good (rolls)
+  reverse-symmetric-stagger keyboard where SFBs can actually be good rolls
 - the `z` I end up using is actually a `gk` combo (and works surprisingly well)
 - `q` is an extra pinky key instead of `shift` (`v` or `m` also work there but
   busy pinkies)
@@ -74,7 +74,7 @@ upside-down (because the keyboard is an upside-down [Katana60][18]). Note
 you're on the `thumbin` branch.
 
 Caveat about the designer: I am not a speedy typist; have only gotten to 100
-wpm on qwerty, same on Colemak, and have a history of only take my own designs
+wpm on qwerty, same on Colemak, and have a history of only taking my own designs
 and others to <60 before getting distracted and making more changes. It's taken
 me ~5 significant iterations over 6 months to arrive at _Flowrist_. After a
 few weeks on Flowrist I have had some bursts to 120, and didn't feel any
@@ -193,8 +193,9 @@ Here are the directional/spatial pairings:
 - `ywh` — _yank/save/select_ (clustered, all right-index)
 - `ae`  — _start/end_ (though backwards)
 - `sr`  — _search (forward)/reverse_
-- `qg`  — _quit/cancel_ (Emacs, these are really cool!)
-- `cxv`  — _cut/paste_ (non-editor apps; still together, but macros preferred)
+- `qgk` — _quit/cancel/kill_ (Emacs, these are really cool!)
+- `cl`  — _capitalize/lowercase_ (though backwards)
+- `cxv`  — _cut/paste_ (non-editor apps; still kinda together, but macros preferred)
 - `SPC`/`BSPC` — next/prev page etc.
 
 Other happy accident pairs: `y/n` — yes/no; `l/r` — left/right
@@ -397,20 +398,22 @@ that I feel are worth macro-ing via [repeat key][16]:
 - `u` -> `ui`
 - `g` -> `gl`
 - `j` -> `dj` (since `j` is a combo)
+- `k` -> `\bnew`
 - `q` -> `\bprob`
 - `x` -> `\bexcept`
 - `^` -> `\bback` (above `b`; that's a backspace to remove the `"`!)
-- `~` -> `\bforward` (above `f` and why not)
 - `v` -> `\btogether` (why not, long common word)
 - `;` -> `\bwithout` (above `w`)
 
-The rest are repeats (`◊e` is `ee`), and `v,k,z` are open for whatever you decide.
+The rest are repeats (eg, `◊e` is `ee`).
 
 ## Personal Insights in Layout Design
 
 Qwerty-G position (consonant hand only) is way undervalued. That reach feels
-almost as good as home-row, and is a waste to put `g` there. So now `m` is
-there.
+almost as good as home-row, and it's a waste to put `g` there. So now `m` is
+there. Besides _whorf_, I've not seen this done. It is a heavyweight SFB there
+and combines to alt there very well to "MiX" with `ptdvx`, and became a major
+design characteristic of Flowrist.
 
 _Some SFBs are not_ at all. The `wh` overlap is as good as any middle-index
 usage, at least on a keyboard with symmetric slant. I can imagine a layout
@@ -446,13 +449,20 @@ presently (for Emacs etc). So right-hand does a lot of work, but it feels like
 not a problem.
 
 There are "chunks" out there with great potential for magic. I'm using `how`,
-`any`, `one`, `prob`, and a few others, and those are pretty good for Flowrist
-but there may be opportunities here for other layouts.
+`any`, `one`, `prob`, `new`, and a few others, and those are pretty good for
+Flowrist but there may be opportunities here for other layouts.
 
 _Rolls_ are great (though some prefer alternates-heavy, and they're great too
 of course). However, to achieve really high rolls, you'd need to intermix
 vowels and consonants on the hands. But this is so bad for redirects, so you
 have to choose your tradeoff.
+
+The somewhat infrequent keys are the hardest to place. Once you've got the
+most important ~16, you can then put the lowest 4 somewhere really bad without
+concern, but then you've got a few semi-important letters with nowhere to go.
+This was the case for `b` and `y` (and kinda `g`). I tried several spots, but
+No matter where you put them, there's going to be workarounds needed. Where
+they landed is simply the least bad.
 
 It was challenging to separately fit both a _repeat_ and _magic_ key, for
 cognitive load, and lack of real estate. I found that a single key (I call
@@ -525,7 +535,7 @@ you.
 
 **Indexes are overloaded**. Yes `tpmvd` together on left-index result in 1.5%
 and 0.5% in D/SFBs, but in practice almost all of their patterns work very
-well with some practice on their _index-middle_ dances.
+well with some practice on their _index-middle_ alt dances.
 
 **Some `Ctrl-` shortcuts left the left (non-mouse) hand**. There was no way
 `a` could stay on left. `w` is the other unfortunate victim. Outside of Emacs,
@@ -535,7 +545,7 @@ have `Ctrl-l` on the left. And it does help to have a `Ctrl` key on the right
 hand too. You can probably re-bind some alternate on left-hand to handle the
 missing shortcuts.
 
-## Eurolang layer
+## Eurolang layer (ligatures and diacritics)
 
 Flowrist takes the [Compose][21] key into strong consideration for typing
 international characters, by placing the following into easy unshifted reach:
@@ -551,12 +561,12 @@ Compose).
 
 You may have already noticed from typing words like `beauty`, `question`,
 `cruel`, `saint` (and `lieu` isn't so bad), etc, that Français works very well
-with Flowrist, given its vowel layout. Español is great too. The `eu/ue` being
-nice rolls really helps several languages, and most modern layouts struggle
-here in having made those an SFB. And, how many times a day to you type
-`true`?!
+with Flowrist, given its vowel layout. Español and Portuguese are great too.
+The `eu/ue` being nice rolls really helps several languages, and most modern
+layouts struggle here in having made those an SFB. And, how many times a day
+do you type `true`?!
 
-More French words to blow your mind:
+More fun French words:
 
 - oeil
 - étaient
@@ -566,7 +576,7 @@ The following layer would likely be good for covering just about all of
 French, Spanish, German, Italian, Portuguese, Esperanto (and most of [these
 others][20]), but I haven't yet figured out how to get [key sequence
 macros][19] (eg, `Compose-~-n` -> `ñ` should be `LangLayer-n` since
-the former is tedious to type) working.
+the former is more tedious to type) working.
 
 ```
  . . ß ĵ . .    ŭ õ
@@ -622,7 +632,7 @@ is nice there, and `f` is good on RHS. But here's what I couldn't live with:
 
 - `r` and `l` together on ring was breaking my wrist with the upward DSFBs.
 
-- Reaching far up for `w` didn't suit my hand.
+- `w` was tiring out pinky in that high-reach spot.
 
 Side note: I originally hated the `one` pattern, but ended up with it in
 Flowrist anyway, and decided that it was acceptable since I had a magic
@@ -640,12 +650,17 @@ used to it, and now don't feel that it's so godawful.
 - **Do I need the adaptive `nh`?** _No, it'll work fine without, but you lose
   the crazy-high home-row stats._
 
-## Variations
+## Possible Variations
 
 One of my least favorite positions is `b` (for the `br` D/SFBs). It could be
 moved to Qwerty-`h`, but that doubles the LSBs and makes redirects slightly
 worse. It can also go in Qwerty-`t`, swapped with `x` (like Colemak), but I
 like that less.
+
+## Shortcomings / Unsolved Problems
+
+- `g.l` — eg, `gallery`, `legal`, `girl`, `highly`. Only thing I can think of
+  is to hit `g` with _ring_.
 
 ## Transitional Intermediate from QWERTY
 
