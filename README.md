@@ -276,7 +276,7 @@ reach for `o` with _ring_ (to actually get a nice roll out of it).
 - `went` (`mri.`)
 - `win/won/wen` (`mri`)
 - `with` (`mr.i`)
-- `new/now` (`irm`)
+- `new/now` (`irm`) (or magic for `new`)
 - `home/hope/hose` (`ir.m`)
 - `hun` (`ipm`)
 - `people` (`.mr...`)
@@ -315,6 +315,7 @@ reach for `o` with _ring_ (to actually get a nice roll out of it).
 - `tod/ted` (`m.i`)
 - `empty` (`.irm.`) (hard!)
 - `minu` (`.rip`)
+- `honor` (`irmr.`)
 - `himself` (`..i.mpr`) (hard!)
 - `str` (terrible redirect from colemak!)
 - `eco` (`m.r`)
@@ -324,7 +325,7 @@ reach for `o` with _ring_ (to actually get a nice roll out of it).
 - `exact` (`.i.rm`) (left-shifted)
 - `note` (`ir.m`) (hard!)
 - `committee/keenness/whippoorwill/barrenness/unsuccessfully`
-  (_repeat_ practice, full coverage!)
+  (_repeat_ practice, full coverage! But also try monkeytype's "doubleletter" practice.)
 
 And these are a few of the particularly challenging, and could be magic or
 just slowly typed (or really interesting alts):
@@ -659,8 +660,14 @@ like that less.
 
 ## Shortcomings / Unsolved Problems
 
-- `g.l` — eg, `gallery`, `legal`, `girl`, `highly`. Only thing I can think of
-  is to hit `g` with _ring_.
+- `g.l` — eg, `gallery`, `legal`, `girl`, `highly`, `changelog`. Only thing I
+  can think of is to hit `g` with _ring_. And it I'm getting better at it.
+
+- It's pretty slow to learn to use thumb for things, particularly a repeat
+  key.
+
+- Some common proper names have odd patterns and don't do well with adaptive
+  ŋ: John, Micah, etc.
 
 ## Transitional Intermediate from QWERTY
 
