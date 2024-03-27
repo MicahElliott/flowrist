@@ -52,8 +52,8 @@ The novelties/surprises here:
 
 - `ŋ` (`nh`) is an _adaptive_ key, defaulting to `n`, but `h` after other letters
 - bare-`h` is still convenient since you need it for words that start with `h`
-- bare-`n` exists because there is a rare need for it for words like `sign`
-  and `own`
+- bare-`n` exists because there is a rare need for it for words like `siGn`
+  (vs `gh`), `oWn` (vs `wh`), and `Snake` (vs `sh`)
 - all the vowels and semi-vowels (`yw`) are on the right hand (only 8 letters!)
 - `◊` is the "regic" (repeat/magic) key that does _repeats_ for some (most) and
   _magic_ (multi-letter macros) for others (a few)
@@ -74,15 +74,16 @@ upside-down (because the keyboard is an upside-down [Katana60][18]). Note
 you're on the `thumbin` branch.
 
 Caveat about the designer: I am not a speedy typist; have only gotten to 100
-wpm on qwerty, same on Colemak, and have a history of only taking my own designs
-and others to <60 before getting distracted and making more changes. It's taken
-me ~5 significant iterations over 6 months to arrive at _Flowrist_. After a
-few weeks on Flowrist I have had some bursts to 120, and didn't feel any
-obvious bottlenecks that would limit faster fingers from going further.
-Especially given the no-SFBs patterns listed below (~50 of them). It has been
+wpm on qwerty, same on Colemak, and have a history of only taking my own
+designs and others to <60 before getting distracted and making more changes.
+It's taken me ~5 significant iterations over 6 months to arrive at _Flowrist_.
+After over a month on Flowrist I have had some bursts to 120, and didn't feel
+any obvious bottlenecks that would limit faster fingers from going further.
+Especially given the no-SFBs patterns listed below (~60 of them). It has been
 tested by me on up to English-10k, plus all the potentially awkward trigrams
-from [this post][12]. I'm obviously biased, but this is the most comfortable
-my wrists have felt on any of the many layouts I've tried.
+from [this post][12], and even Spanish, French, Portuguese, and German. I'm
+obviously biased, but this is the most comfortable my wrists have felt on any
+of the many layouts I've tried.
 
 ## Defying the analyzers
 
@@ -316,6 +317,7 @@ reach for `o` with _ring_ (to actually get a nice roll out of it).
 - `empty` (`.irm.`) (hard!)
 - `minu` (`.rip`)
 - `honor` (`irmr.`)
+- `update` (`.mi.i.`) (still dsfb but not bad)
 - `himself` (`..i.mpr`) (hard!)
 - `str` (terrible redirect from colemak!)
 - `eco` (`m.r`)
@@ -539,12 +541,16 @@ and 0.5% in D/SFBs, but in practice almost all of their patterns work very
 well with some practice on their _index-middle_ alt dances.
 
 **Some `Ctrl-` shortcuts left the left (non-mouse) hand**. There was no way
-`a` could stay on left. `w` is the other unfortunate victim. Outside of Emacs,
-I use triple-click more often now instead of `Ctrl-a`. And I QMK-mapped `jr`
-combo to be `Ctrl-w`. And `bf` to be `Ctrl-Tab`. On the bright side, you now
-have `Ctrl-l` on the left. And it does help to have a `Ctrl` key on the right
-hand too. You can probably re-bind some alternate on left-hand to handle the
-missing shortcuts.
+`a` could stay on left. `w` is the other unfortunate victim. But for
+right-handed mousing, you want all the shortcuts to be fully left-handed.
+Outside of Emacs, I use triple-click more often now instead of `Ctrl-a`. And I
+QMK-mapped `fs` combo to be `Ctrl-w`. And `bf` to be `Ctrl-Tab`. On the bright
+side, you now have `Ctrl-l` on the left. It helps to have a `Ctrl` key on the
+right hand too. You can re-bind some alternatives on left-hand to handle the
+missing shortcuts. In fact, when I have to switch over to a Mac, I remap some
+of the Mac shortcuts to use `Ctrl-` instead of `Cmd-` to get the consistency
+across OSs. This way, the same macros, `kd`, `xm`, `mv`, `fs`, `lq` work
+across OSs for copy, cut, paste, close, select-all.
 
 ## Eurolang layer (ligatures and diacritics)
 
