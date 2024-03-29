@@ -6,17 +6,17 @@ Flowrist is a keyboard layout that focuses on:
 
 - minimizing **redirects** and **stretching** (low LSBs, AKA lateral movement)
 - the easiest possible (though high at 2%) and mostly **downward SFBs**
-- a reality of **near-0 D/SFBs** with easy alt-fingerings
+- a reality of **near-0 D/SFBs** with designed alt-fingerings
 - **offloading pinkies** for busy indexes and middles
 
-It is designed to be **easy to transition to from Colemak(-DH)** with ~12
-(mostly lower-freq) keys moving, and maintaining most of its core (only 2 of
-the top-10 freqs changed: `a` and `o`). One could also transition from QWERTY
-with ~13 moves (see section below for intermediate layout). The intentionally
-high SFBs (still under 2%) are almost all middle-to-index finger overlaps, and
-applying that overlap technique actually brings the elbows outward into a more
-natural wrist position. See the [transitional](#transitional) section below
-to try Flowrist with just 5 moves from Colemak.
+It is designed to be **easy to transition to from Colemak(-DH),** keeping most
+of its core intact (only 2 of the top-10 freqs changed: `a` and `o`; and ~10
+lower-freq tweaks). One could also transition from QWERTY with ~13 moves (see
+section below for intermediate layout). The intentionally high SFBs (still
+under 2%) are almost all middle-to-index finger overlaps, and applying that
+overlap technique actually brings the elbows outward into a more natural wrist
+position. See the [transitional](#transitional) section below to try Flowrist
+with just 5 total moves from Colemak.
 
 ```
 ` √ b f p x   y w o u '
@@ -28,8 +28,8 @@ q g k c d v   n h / . ,
 (`√` is _compose_, `◊` is _magic_, `ŋ` is `nh` _adaptive_, `¢` is `Ctrl-c`,
 `j` (`cd`) and `z` (`gk`) are combos, and all of these are optional)
 
-It's really designed to be used with a reverse-symmetric-stagger keyboard (to
-make the SFB overlaps easier) as:
+It's originally designed to be used optimally with a reverse-symmetric-stagger
+keyboard (to make the SFB overlaps easier) as:
 
 ```
 \ ` √ b f p x  \    /  y w o u ' /
@@ -50,16 +50,19 @@ one-step tarmak-like 5-move transitional layout.
 
 The novelties/surprises here:
 
-- `ŋ` (`nh`) is an _adaptive_ key, defaulting to `n`, but `h` after other letters
+- `ŋ` (`nh`) is an _adaptive_ key, defaulting to `n`, but `h` after other
+  letters (which is surprisingly easy to learn)
 - bare-`h` is still convenient since you need it for words that start with `h`
 - bare-`n` exists because there is a rare need for it for words like `siGn`
   (vs `gh`), `oWn` (vs `wh`), and `Snake` (vs `sh`)
-- all the vowels and semi-vowels (`yw`) are on the right hand (only 8 letters!)
-- `◊` is the "regic" (repeat/magic) key that does _repeats_ for some (most) and
-  _magic_ (multi-letter macros) for others (a few)
+- all the vowels and semi-vowels (`yw`) are on the right hand (only 8
+  letters!), enabling all shortcuts on the left hand (explanation below)
+- `◊` is the "regic" (repeat/magic) key that does _repeats_ for some and
+  _magic_ (multi-letter macros) for others
 - this isn't great for SFBs according to the analyzers, but it's tuned for a
   reverse-symmetric-stagger keyboard where SFBs can actually be good rolls
-- the `z` I end up using is actually a `gk` combo (and works surprisingly well)
+- the `z` I end up using is actually a `gk` combo (and works surprisingly
+  well), and `j` is `cd`
 - `q` is an extra pinky key instead of `shift` (`v` or `m` also work there but
   busy pinkies)
 - left-hand rides low, right is high, and that seems fine
@@ -287,7 +290,7 @@ reach for `o` with _ring_ (to actually get a nice roll out of it).
 - `middle` (`i.m◊p.`)
 - `time` (`m.i.`) (shift)
 - `face` (`r.i.`)
-- `fact/fect/sect` (`r.mi`)
+- `fact/fect/sect/fast` (`r.mi`)
 - `exp/ext` (`.im`)
 - `they` (`.mri`) (shift)
 - `pit/pat/put/pet/pot/peat` (`m.i`) (`p` is often middle; just look ahead for `t`)
@@ -317,7 +320,7 @@ reach for `o` with _ring_ (to actually get a nice roll out of it).
 - `empty` (`.irm.`) (hard!)
 - `minu` (`.rip`)
 - `honor` (`irmr.`)
-- `update` (`.mi.i.`) (still dsfb but not bad)
+- `updated` (`.mi.m.i`) (still dsfb but not bad)
 - `himself` (`..i.mpr`) (hard!)
 - `str` (terrible redirect from colemak!)
 - `eco` (`m.r`)
@@ -327,7 +330,22 @@ reach for `o` with _ring_ (to actually get a nice roll out of it).
 - `exact` (`.i.rm`) (left-shifted)
 - `note` (`ir.m`) (hard!)
 - `committee/keenness/whippoorwill/barrenness/unsuccessfully`
-  (_repeat_ practice, full coverage! But also try monkeytype's "doubleletter" practice.)
+  (_repeat_ practice, full coverage! But also try monkeytype's "doubleletter"
+  practice.)
+
+Here they all are as full words if you want to paste them into Monkeytype:
+
+```
+
+thin than own sign snow hand rope open one only deny who when went win won went
+with new now home hope hose hunt people goes does met move middle time face
+fact fect sect fast exp ext they pit pat put pet pot peat part post step soft
+complete video way develop show simple hey they second stop most must break
+drop depend nubber fast bars lying number today rated empty minus honor
+updated himself string eco leg quiet techno exact note committee keenness
+whippoorwill barrenness unsuccessfully
+
+```
 
 And these are a few of the particularly challenging, and could be magic or
 just slowly typed (or really interesting alts):
@@ -336,6 +354,7 @@ just slowly typed (or really interesting alts):
 - `moment`
 - `board`
 - `consider`
+- `marble`
 
 If you want to focus on practicing a given letter or two (`m` and `g` in this
 example), here's a way (from a terminal) — grab a list of words and:
@@ -637,13 +656,15 @@ is nice there, and `f` is good on RHS. But here's what I couldn't live with:
 - More divergent from Colemak than was necessary, especially in the core with
   `f` and `c` moving.
 
-- `r` and `l` together on ring was breaking my wrist with the upward DSFBs.
+- `r` and `l` together on ring was breaking my wrist with the upward-to-pinky
+  DSFBs. `grep 'r..?l' 10k.lst` exposes this problem that I can't see any
+  workaround for.
 
 - `w` was tiring out pinky in that high-reach spot.
 
 Side note: I originally hated the `one` pattern, but ended up with it in
 Flowrist anyway, and decided that it was acceptable since I had a magic
-workaround for it. But then I tried typing it enough (`imr` or `rim`) and got
+workaround for it. But then I tried typing it enough (`mir`) and got
 used to it, and now don't feel that it's so godawful.
 
 ## FAQs
