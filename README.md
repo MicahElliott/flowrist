@@ -54,7 +54,7 @@ The novelties/surprises here:
   letters (which is surprisingly easy to learn)
 - bare-`h` is still convenient since you need it for words that start with `h`
 - bare-`n` exists because there is a rare need for it for words like `siGn`
-  (vs `gh`), `oWn` (vs `wh`), and `Snake` (vs `sh`)
+  (vs `gh`), `oWn` (vs `wh`), `fiTness` (vs `th`), and `Snake` (vs `sh`)
 - all the vowels and semi-vowels (`yw`) are on the right hand (only 8
   letters!), enabling all shortcuts on the left hand (explanation below)
 - `◊` is the "regic" (repeat/magic) key that does _repeats_ for some and
@@ -65,7 +65,8 @@ The novelties/surprises here:
   well), and `j` is `cd`
 - `q` is an extra pinky key instead of `shift` (`v` or `m` also work there but
   busy pinkies)
-- left-hand rides low, right is high, and that seems fine
+- left-hand rides low, right is high, and that seems fine (this being thanks
+  to Colemak heritage)
 - the symmetric-stagger's elbows-out twist makes patterns like `ue`, `on`,
   `mp`, `ft`, especially comfortable, and even 2-row hops like `f.c`
   (_middle-index_) are easy
@@ -276,6 +277,7 @@ reach for `o` with _ring_ (to actually get a nice roll out of it).
 - `one` (`rim`) (scrunch, or magic)
 - `only` (`rm.i`) (hand-shift and hard down-up))
 - `deny` (`.rmi`) (shift)
+- `phy` (`.mi`)
 - `who/whe` (`mir`)
 - `went` (`mri.`)
 - `win/won/wen` (`mri`)
@@ -304,6 +306,7 @@ reach for `o` with _ring_ (to actually get a nice roll out of it).
 - `dev` (`m.i`)
 - `show` (`.irm`)
 - `simple` (`r.imp.`)
+- `enh/inh` (`rmi`)
 - `hey` (`mri`)
 - `they` (`.mri`) (home-`h`)
 - `second` (`mmirii`)
@@ -317,7 +320,7 @@ reach for `o` with _ring_ (to actually get a nice roll out of it).
 - `ying` (`ipm.`) (shift)
 - `number` (`..ip.r`)
 - `tod/ted` (`m.i`)
-- `empty` (`.irm.`) (hard!)
+- `empty/assumption` (`.irm.`) (hard!)
 - `minu` (`.rip`)
 - `honor` (`irmr.`)
 - `updated` (`.mi.m.i`) (still dsfb but not bad)
@@ -327,8 +330,13 @@ reach for `o` with _ring_ (to actually get a nice roll out of it).
 - `leg` (`p.r`)
 - `quiet` (`.rmi.`) (or `qu◊et`)
 - `techno` (`...ii.`)
+- `garbage` (`p.rp.p.`)
 - `exact` (`.i.rm`) (left-shifted)
 - `note` (`ir.m`) (hard!)
+- `wheat` (`mirp.`)
+- `log/leg/lug/lag/lig` (`p.r`)
+- `mark` (`..rm`)
+- `gold/gild` (`r.p.`) (rare)
 - `committee/keenness/whippoorwill/barrenness/unsuccessfully`
   (_repeat_ practice, full coverage! But also try monkeytype's "doubleletter"
   practice.)
@@ -336,18 +344,13 @@ reach for `o` with _ring_ (to actually get a nice roll out of it).
 Here they all are as full words if you want to paste them into Monkeytype:
 
 ```
-
-thin than own sign snow hand rope open one only deny who when went win won went
-with new now home hope hose hunt people goes does met move middle time face
-fact fect sect fast exp ext they pit pat put pet pot peat part post step soft
-complete video way develop show simple hey they second stop most must break
-drop depend nubber fast bars lying number today rated empty minus honor
-updated himself string eco leg quiet techno exact note committee keenness
-whippoorwill barrenness unsuccessfully
-
+thin than own sign snow hand rope open one only deny who when went win won went with new now home hope hose hunt people goes does met move middle time face fact fect sect fast expect extra they pit pat put pet pot peat part post step soft complete video way develop show simple enhance inhibit hey they second stop most must break drop depend number fast bars lying today rated empty minus honor updated himself string eco leg physics quiet techno exact note remark gallery gold committee keenness garbage whippoorwill barrenness unsuccessfully
 ```
 
-And these are a few of the particularly challenging, and could be magic or
+Once you've spent some time painstakingly practicing those funny feeling
+patterns, you'll have a new typing paradigm that eliminates nearly all D/SFBS!
+
+Here are a few of the particularly challenging, and could be magic or
 just slowly typed (or really interesting alts):
 
 - `beyond`
@@ -364,6 +367,9 @@ echo `grep '[mg]' top1000.lst | shuf`
 ```
 
 Then paste those into monkeytype's _custom_ setting.
+
+For more general practice, I recommend starting with [keybr][23] and then
+using [monkeytype][9] _words_ levels increasingly up to **English 5k**.
 
 **Note on the left-thumb:** It takes quite a while to get used to using
 a _regic_ key, even moreso when it's a new thumb. It took me a few weeks to
@@ -409,7 +415,7 @@ Here are the fiddly/stretchy/logjammy/SFB (or very common) words from top-1000
 that I feel are worth macro-ing via [repeat key][16]:
 
 - `a` -> `any`
-- `b` -> `behind`
+- `b` -> `between`
 - `'` -> `\bI'`
 - `h` -> `how`
 - `i` -> `ious`
@@ -428,6 +434,13 @@ that I feel are worth macro-ing via [repeat key][16]:
 - `;` -> `\bwithout` (above `w`)
 
 The rest are repeats (eg, `◊e` is `ee`).
+
+Here is a list of good practice words using magic (not repeats), that can be
+pasted into Monkeytype and randomized:
+
+```
+however anywhere anyhow show scrumptious knew exceptional backward together between without problem probably quit quiet adjust gluten igloo neglect I'll I'm
+```
 
 ## Personal Insights in Layout Design
 
@@ -483,8 +496,9 @@ The somewhat infrequent keys are the hardest to place. Once you've got the
 most important ~16, you can then put the lowest 4 somewhere really bad without
 concern, but then you've got a few semi-important letters with nowhere to go.
 This was the case for `b` and `y` (and kinda `g`). I tried several spots, but
-No matter where you put them, there's going to be workarounds needed. Where
-they landed is simply the least bad.
+no matter where you put them, there's going to be workarounds needed. Where
+they landed iws simply the least bad. Comparing the `b` location to Colemak, I
+find Flowrist
 
 It was challenging to separately fit both a _repeat_ and _magic_ key, for
 cognitive load, and lack of real estate. I found that a single key (I call
@@ -622,25 +636,29 @@ Colemak:
   practice, you can get fast at it, but my experience was that it will always
   be error-prone. It's especially bad to have redirects involving _ring_ and
   _pinky_. At 10.1% total and 1.47% "bad", it's really hard to not feel
-  crippled by them (`you` is half of those bad ones btw). Flowrist gets them
-  down to 4.2% total and 0.12% bad.
+  crippled by them (`you` is half of those bad ones btw). _Flowrist gets
+  redirects down to 4.2% total and 0.12% bad._
 
 - **`m` on center-right-column causes LSBs.** `m` alone is a 1.5% LSB (and
   also 2% of redirects). It definitely doesn't belong anywhere near there. And
-  as soon as you move it to left-hand, lots of other moves cascade. Flowrist
-  takes LSBs down to 0.2% if you discount `y` with magic.
+  as soon as you move it to left-hand, lots of other moves cascade with it.
+  _Flowrist takes LSBs down to 0.2% if you discount `y` with magic._
 
 - **Not a real vowel hand.** `a` on left causes 2.2% more redirects and plainly
   makes the design chaotic (even if it was good for rolls). It also accounts
-  for the other half of the bad ones.
+  for the other half of the bad ones. In contrast, _Flowrist has an extreme
+  vowel-hand._
+
+The above problems result in a list of [very challenging Colemak words][22],
+almost all of which become easy words with Flowrist.
 
 All that said, Colemak is pretty/really good on: **Effort, SFBs, rolls, and
 underloading rings and pinkies**. But even Qwerty is good on the underloading!
 
-Applying _magic_ to Colemak may be a much simpler approach to solving its
-shortcomings. I didn't discover magic until too late in the game (and so
+Applying _magic_ to Colemak may be a much simpler approach to solving some of
+its shortcomings. I didn't discover magic until too late in the game (and so
 haven't tried to invent the right patterns for it there), but that's a good
-place to start, if you're not fully convinced that you need something new.
+place to start, if you're not fully convinced that you need new a new layout.
 
 ## So why not just use Canary?
 
@@ -731,6 +749,8 @@ cold-turkey directly to full Flowrist).
 [19]: https://getreuer.info/posts/keyboards/macros/index.html
 [20]: http://letterfrequency.org/letter-frequency-by-language/
 [21]: https://en.wikipedia.org/wiki/Compose_key
+[22]: https://github.com/MicahElliott/colemak-practice/blob/master/best.lst
+[23]: https://www.keybr.com/
 
 Hi! Wanted to share the "Flowrist" layout I finally landed on. It might not be
 practical for most, given the "inverted symmetric-stagger" (aka upside-down)
