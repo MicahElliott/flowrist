@@ -81,13 +81,14 @@ Caveat about the designer: I am not a speedy typist; have only gotten to 100
 wpm on qwerty, same on Colemak, and have a history of only taking my own
 designs and others to <60 before getting distracted and making more changes.
 It's taken me ~5 significant iterations over 6 months to arrive at _Flowrist_.
-After over a month on Flowrist I have had some bursts to 120, and didn't feel
-any obvious bottlenecks that would limit faster fingers from going further.
-Especially given the no-SFBs patterns listed below (~60 of them). It has been
-tested by me on up to English-10k, plus all the potentially awkward trigrams
-from [this post][12], and even Spanish, French, Portuguese, and German. I'm
-obviously biased, but this is the most comfortable my wrists have felt on any
-of the many layouts I've tried.
+After over a month on Flowrist I'm at 60 wpm on English-5k, 80 wpm on
+English-100, have some bursts to 120+, and didn't feel any obvious bottlenecks
+that would limit faster fingers from going further. Especially given the
+no-SFBs patterns listed below (~60 of them). It has been tested by me on up to
+English-10k, plus all the potentially awkward trigrams from [this post][12],
+and even Spanish, French, Portuguese, and German. I'm obviously biased, but
+this is the most comfortable my wrists have felt on any of the many layouts
+I've tried.
 
 ## Defying the analyzers
 
@@ -278,6 +279,7 @@ reach for `o` with _ring_ (to actually get a nice roll out of it).
 - `only` (`rm.i`) (hand-shift and hard down-up))
 - `deny` (`.rmi`) (shift)
 - `phy` (`.mi`)
+- `hydro` (`im...`)
 - `who/whe` (`mir`)
 - `went` (`mri.`)
 - `win/won/wen` (`mri`)
@@ -287,15 +289,22 @@ reach for `o` with _ring_ (to actually get a nice roll out of it).
 - `hun` (`ipm`)
 - `people` (`.mr...`)
 - `goes/does` (`.ri.`)
-- `met` (`i.m`)
+- `met/mat/` (`i.m`) (etc)
 - `move` (`mmii`)
 - `middle` (`i.m◊p.`)
+- `admit` (`.mi.m`)
 - `time` (`m.i.`) (shift)
+- `tive` (`m.i.`)
+- `advice` (`.mi.m.`)
+- `dev/divide` (`m.i.m.`)
+- `dep` (`i.m`)
+- `det` (`i.m`)
+- `dim` (`m.i`)
+- `exp/ext` (`.im`)
+- `pit/pat/put/pet/pot/peat` (`m.i`) (`p` is often middle; just look ahead for `t`)
 - `face` (`r.i.`)
 - `fact/fect/sect/fast` (`r.mi`)
-- `exp/ext` (`.im`)
 - `they` (`.mri`) (shift)
-- `pit/pat/put/pet/pot/peat` (`m.i`) (`p` is often middle; just look ahead for `t`)
 - `part` (`m.pi`) (very often!)
 - `post` (`m.ri`)
 - `step` (`rmi`)
@@ -303,7 +312,6 @@ reach for `o` with _ring_ (to actually get a nice roll out of it).
 - `complete` (`m.imp...`)
 - `vid` (`i.m`)
 - `way` (`mpi`)
-- `dev` (`m.i`)
 - `show` (`.irm`)
 - `simple` (`r.imp.`)
 - `enh/inh` (`rmi`)
@@ -314,7 +322,6 @@ reach for `o` with _ring_ (to actually get a nice roll out of it).
 - `most/must` (`irm`)
 - `break` (`rm..i`) (if you wanna get crazy)
 - `drop` (`ir.m`)
-- `dep` (`i.m`)
 - `ber` (`r.m`)
 - `fast/bars` (`r.mi`)
 - `ying` (`ipm.`) (shift)
@@ -341,11 +348,22 @@ reach for `o` with _ring_ (to actually get a nice roll out of it).
   (_repeat_ practice, full coverage! But also try monkeytype's "doubleletter"
   practice.)
 
+There are some squirrely/surprising words involving `ŋ`:
+
+- `ahead`
+- `snow`
+- `snake`
+- `dawn`
+- `own`
+- `sign`
+- `fitness`
+
 Here they all are as full words if you want to paste them into Monkeytype:
 
 ```
-thin than own sign snow hand rope open one only deny who when went win won went with new now home hope hose hunt people goes does met move middle time face fact fect sect fast expect extra they pit pat put pet pot peat part post step soft complete video way develop show simple enhance inhibit hey they second stop most must break drop depend number fast bars lying today rated empty minus honor updated himself string eco leg physics quiet techno exact note remark gallery gold committee keenness garbage whippoorwill barrenness unsuccessfully
+thin than sign snow hand rope open one only deny hydro who when went win won went with new now home hope hose hunt people goes does met move middle time face fact fect sect fast expect extra they pit pat put pet pot peat part post step soft complete video way admit relative develop determine dimension matter metal advice show simple enhance inhibit hey they second stop most must break drop depend number fast bars lying today rated empty minus honor updated himself string eco leg physics quiet techno exact note remark gallery gold committee keenness garbage whippoorwill barrenness unsuccessfully ahead snow snake dawn own sign fitness
 ```
+
 
 Once you've spent some time painstakingly practicing those funny feeling
 patterns, you'll have a new typing paradigm that eliminates nearly all D/SFBS!
@@ -652,6 +670,11 @@ Colemak:
 The above problems result in a list of [very challenging Colemak words][22],
 almost all of which become easy words with Flowrist.
 
+Furthermore, Colemak(-DH) wasn't easy to learn. It managed to keep some
+infrequent keys the same as Qwerty: `zxqwg`, but the only core keys that
+really stayed the same were: `ac`. And that was a problematic location for `a`
+anyway! Plus, moving `s` over one spot was unnecessarily cruel.
+
 All that said, Colemak is pretty/really good on: **Effort, SFBs, rolls, and
 underloading rings and pinkies**. But even Qwerty is good on the underloading!
 
@@ -693,20 +716,24 @@ used to it, and now don't feel that it's so godawful.
   tweak to put `w` somewhere else; maybe on center-col-right-index or even
   right-pinky._
 
-- **Do I need the adaptive `nh`?** _No, it'll work fine without, but you lose
-  the crazy-high home-row stats._
+- **Do I need the adaptive `nh`?** _No, it'll work fine without, having it be
+  a normal `n`, but you lose the crazy-high home-row stats._
 
 ## Possible Variations
 
 One of my least favorite positions is `b` (for the `br` D/SFBs). It could be
 moved to Qwerty-`h`, but that doubles the LSBs and makes redirects slightly
-worse. It can also go in Qwerty-`t`, swapped with `x` (like Colemak), but I
-like that less.
+worse. It can also go to Qwerty-`t` (like Colemak), swapped with `x`, but I
+like that even less, and it's BaD for your BoDy, and the DeBT is not open for
+DeBaTe (and I type `db` a lot).
+
+Some people may not like `g` on low-pinky. It could be moved up to Qwerty-`q`
+position if you use a col-stag keyboard.
 
 ## Shortcomings / Unsolved Problems
 
 - `g.l` — eg, `gallery`, `legal`, `girl`, `highly`, `changelog`. Only thing I
-  can think of is to hit `g` with _ring_. And it I'm getting better at it.
+  can think of is to hit `g` with _ring_. And I'm getting better at it.
 
 - It's pretty slow to learn to use thumb for things, particularly a repeat
   key.
