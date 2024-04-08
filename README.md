@@ -779,35 +779,43 @@ cold-turkey directly to full Flowrist).
 [22]: https://github.com/MicahElliott/colemak-practice/blob/master/best.lst
 [23]: https://www.keybr.com/
 
-Hi! Wanted to share the "Flowrist" layout I finally landed on. It might not be
-practical for most, given the "inverted symmetric-stagger" (aka upside-down)
-keyboard I use (though katana60 boards are available!), but hopefully some of
-the ideas in the write-up I made here are interesting/useful to some:
-https://github.com/MicahElliott/flowrist
+## Thanks!!
 
-```
-\     b f p x  \    /  y w o u ' /
- \   l r s t m  \  /    ŋ e i a /
-  \ q g k c d v  \/  n h / . , /
-           ◊ ⇑        ⇐ _
-```
+- _Oxey_ and _Cyanophage_ for their analyzers
+- _Pascal Getreuer_ for all the QMK additions
+- The tireless layout designers
+- The many avid posters on _r/KeyboardLayouts_
+- _Giorgi Chavchanidze_ for the Horn layouts (and other research)
 
-What I hope makes this worth a read is that it tries to harmonize from the
-beginning: an adaptive key, a different kind of keyboard, two active thumbs,
-all vowel-likes on the right hand (even `w`), editor spatial awareness, `l`
-where it's maybe never been, three letters hidden or in odd places, a
-magic/repeat multi-purpose key, and an easy-compose for non-English. There's
-also an alt-fingering practice guide and a one-step tarmak-like 5-move
-transitional layout.
+<!-- Hi! Wanted to share the "Flowrist" layout I finally landed on. It might not be -->
+<!-- practical for some, given the "inverted symmetric-stagger" (aka upside-down) -->
+<!-- keyboard I use (though katana60 boards are available!), but it should also -->
+<!-- work with ortholinears, and hopefully some of the ideas in the write-up I made -->
+<!-- here are interesting/useful to some: https://github.com/MicahElliott/flowrist -->
 
-I think it could be used on a matrix-style keyboard too, so if any Colemakkers
-wanna give it a try, it aims to be a close derivative.
+<!-- ``` -->
+<!-- \     b f p x  \    /  y w o u ' / -->
+<!--  \   l r s t m  \  /    ŋ e i a / -->
+<!--   \ q g k c d v  \/  n h / . , / -->
+<!--            ◊ ⇑        ⇐ _ -->
+<!-- ``` -->
 
-I'm not planning presently to change much about it since it's working well for
-me, but certainly interested in hearing from the knowlegdeable folks I've
-learned so much from reading here (and really anyone): if there are any
-obvious flaws or expected eventual pain points or clear improvements or WTFs,
-etc, so I could consider fixing them. Also a big shout-out to Oxey,
-Cyanophage, phbonacci, someguy3, iandoug, and several others for their
-analyzers, open analysis discussions, and layouts that have been so inspiring
-to make it possible for plebs like me to be able to make a layout!
+<!-- What I hope makes this worth a read is that it tries to harmonize from the -->
+<!-- beginning: an adaptive `nh` key, two active thumbs, all vowel-likes on the -->
+<!-- right hand (even `w`), editor spatial awareness, `l` where it's maybe never -->
+<!-- been, three letters hidden or in odd places, a magic/repeat multi-purpose key, -->
+<!-- a different kind of keyboard, and an easy-compose for non-English. There's -->
+<!-- also an alt-fingering practice guide and a one-step tarmak-like 5-move -->
+<!-- transitional layout. -->
+
+<!-- I think it could be used on a matrix-style keyboard too, so if any Colemakkers -->
+<!-- wanna give it a try, it aims to be a close derivative. -->
+
+<!-- I'm not planning presently to change much about it since it's working well for -->
+<!-- me, but certainly interested in hearing from the knowlegdeable folks I've -->
+<!-- learned so much from reading here (and really anyone): if there are any -->
+<!-- obvious flaws or expected eventual pain points or clear improvements or WTFs, -->
+<!-- etc, so I could consider fixing them. Also a big shout-out to Oxey, and -->
+<!-- Cyanophage, phbonacci, and several others for their analyzers, open analysis -->
+<!-- discussions, and layouts that have been so inspiring to make it possible for -->
+<!-- plebs like me to be able to make a layout! -->
